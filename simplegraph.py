@@ -343,6 +343,156 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         imuanmix_list = [str(self.imuanmix_listWidget.item(i).text()) for i in range(self.imuanmix_listWidget.count())]
         imureatot_list = [str(self.imureatot_listWidget.item(i).text()) for i in range(self.imureatot_listWidget.count())]
         imureadef_list = [str(self.imureadef_listWidget.item(i).text()) for i in range(self.imureadef_listWidget.count())]
+        imureanesoi_list = [str(self.imureanesoi_listWidget.item(i).text()) for i in range(self.imureanesoi_listWidget.count())]
+        imureasolid_list = [str(self.imureasolid_listWidget.item(i).text()) for i in range(self.imureasolid_listWidget.count())]
+        imureaaq_list = [str(self.imureaaq_listWidget.item(i).text()) for i in range(self.imureaaq_listWidget.count())]
+        #exports
+        exammtot_list = [str(self.exammtot_listWidget.item(i).text()) for i in range(self.exammtot_listWidget.count())]
+        examman_list = [str(self.examman_listWidget.item(i).text()) for i in range(self.examman_listWidget.count())]
+        exammnittot_list = [str(self.exammnittot_listWidget.item(i).text()) for i in range(self.exammnittot_listWidget.count())]
+        exammnitaq_list = [str(self.exammnitaq_listWidget.item(i).text()) for i in range(self.exammnitaq_listWidget.count())]
+        exammsu_list = [str(self.exammsu_listWidget.item(i).text()) for i in range(self.exammsu_listWidget.count())]
+        exdap_list = [str(self.exdap_listWidget.item(i).text()) for i in range(self.exdap_listWidget.count())]
+        exnpk_list = [str(self.exnpk_listWidget.item(i).text()) for i in range(self.exnpk_listWidget.count())]
+        exmaptot_list = [str(self.exmaptot_listWidget.item(i).text()) for i in range(self.exmaptot_listWidget.count())]
+        exmapmix_list = [str(self.exmapmix_listWidget.item(i).text()) for i in range(self.exmapmix_listWidget.count())]
+        exphosac_list = [str(self.exphosac_listWidget.item(i).text()) for i in range(self.exphosac_listWidget.count())]
+        expot_list = [str(self.expot_listWidget.item(i).text()) for i in range(self.expot_listWidget.count())]
+        extsptot_list = [str(self.extsptot_listWidget.item(i).text()) for i in range(self.extsptot_listWidget.count())]
+        extspless_list = [str(self.extspless_listWidget.item(i).text()) for i in range(self.extspless_listWidget.count())]
+        extspgreat_list = [str(self.extspgreat_listWidget.item(i).text()) for i in range(self.extspgreat_listWidget.count())]
+        exuantot_list = [str(self.exuantot_listWidget.item(i).text()) for i in range(self.exuantot_listWidget.count())]
+        exuanmix_list = [str(self.exuanmix_listWidget.item(i).text()) for i in range(self.exuanmix_listWidget.count())]
+        exureatot_list = [str(self.exureatot_listWidget.item(i).text()) for i in range(self.exureatot_listWidget.count())]
+        exureaaq_list = [str(self.exureaaq_listWidget.item(i).text()) for i in range(self.exureaaq_listWidget.count())]
+        #supply/demand
+        sdamm_list = [str(self.sdamm_listWidget.item(i).text()) for i in range(self.sdamm_listWidget.count())]
+        sddapmapus_list = [str(self.sddapmapus_listWidget.item(i).text()) for i in range(self.sddapmapus_listWidget.count())]
+        sddapmapall_list = [str(self.sddapmapall_listWidget.item(i).text()) for i in range(self.sddapmapall_listWidget.count())]
+        sdpotus_list = [str(self.sdpotus_listWidget.item(i).text()) for i in range(self.sdpotus_listWidget.count())]
+        sdpotall_list = [str(self.sdpotall_listWidget.item(i).text()) for i in range(self.sdpotall_listWidget.count())]    
+        sduan_list = [str(self.sduan_listWidget.item(i).text()) for i in range(self.sduan_listWidget.count())]
+        sdureaus_list = [str(self.sdureaus_listWidget.item(i).text()) for i in range(self.sdureaus_listWidget.count())]
+        sdureaall_list = [str(self.sdureaall_listWidget.item(i).text()) for i in range(self.sdureaall_listWidget.count())] 
+        #freight
+        dapbid_list = [str(self.dapbid_listWidget.item(i).text()) for i in range(self.dapbid_listWidget.count())] 
+        dapoffer_list = [str(self.dapoffer_listWidget.item(i).text()) for i in range(self.dapoffer_listWidget.count())] 
+        dapmid_list = [str(self.dapmid_listWidget.item(i).text()) for i in range(self.dapmid_listWidget.count())] 
+        mopbid_list = [str(self.mopbid_listWidget.item(i).text()) for i in range(self.mopbid_listWidget.count())] 
+        mopoffer_list = [str(self.mopoffer_listWidget.item(i).text()) for i in range(self.mopoffer_listWidget.count())] 
+        mopmid_list = [str(self.mopmid_listWidget.item(i).text()) for i in range(self.mopmid_listWidget.count())] 
+        phorockbid_list = [str(self.phorockbid_listWidget.item(i).text()) for i in range(self.phorockbid_listWidget.count())] 
+        phorockoffer_list = [str(self.phorockoffer_listWidget.item(i).text()) for i in range(self.phorockoffer_listWidget.count())] 
+        phorockmid_list = [str(self.phorockmid_listWidget.item(i).text()) for i in range(self.phorockmid_listWidget.count())]   
+        sulfurbid_list = [str(self.sulfurbid_listWidget.item(i).text()) for i in range(self.sulfurbid_listWidget.count())] 
+        sulfuroffer_list = [str(self.sulfuroffer_listWidget.item(i).text()) for i in range(self.sulfuroffer_listWidget.count())] 
+        sulfurmid_list = [str(self.sulfurmid_listWidget.item(i).text()) for i in range(self.sulfurmid_listWidget.count())] 
+        ureabid_list = [str(self.ureabid_listWidget.item(i).text()) for i in range(self.ureabid_listWidget.count())] 
+        ureaoffer_list = [str(self.ureaoffer_listWidget.item(i).text()) for i in range(self.ureaoffer_listWidget.count())] 
+        ureamid_list = [str(self.ureamid_listWidget.item(i).text()) for i in range(self.ureamid_listWidget.count())]    
+        ammbid_list = [str(self.ammbid_listWidget.item(i).text()) for i in range(self.ammbid_listWidget.count())] 
+        ammoffer_list = [str(self.ammoffer_listWidget.item(i).text()) for i in range(self.ammoffer_listWidget.count())] 
+        ammmid_list = [str(self.ammmid_listWidget.item(i).text()) for i in range(self.ammmid_listWidget.count())]    
+        phoacbid_list = [str(self.phoacbid_listWidget.item(i).text()) for i in range(self.phoacbid_listWidget.count())] 
+        phoacoffer_list = [str(self.phoacoffer_listWidget.item(i).text()) for i in range(self.phoacoffer_listWidget.count())] 
+        phoacmid_list = [str(self.phoacmid_listWidget.item(i).text()) for i in range(self.phoacmid_listWidget.count())]    
+        sulacbid_list = [str(self.sulacbid_listWidget.item(i).text()) for i in range(self.sulacbid_listWidget.count())] 
+        sulacoffer_list = [str(self.sulacoffer_listWidget.item(i).text()) for i in range(self.sulacoffer_listWidget.count())] 
+        sulacmid_list = [str(self.sulacmid_listWidget.item(i).text()) for i in range(self.sulacmid_listWidget.count())] 
+        uanbid_list = [str(self.uanbid_listWidget.item(i).text()) for i in range(self.uanbid_listWidget.count())] 
+        uanoffer_list = [str(self.uanoffer_listWidget.item(i).text()) for i in range(self.uanoffer_listWidget.count())] 
+        uanmid_list = [str(self.uanmid_listWidget.item(i).text()) for i in range(self.uanmid_listWidget.count())]  
+        #forecast
+        chsdap_list = [str(self.chsdap_listWidget.item(i).text()) for i in range(self.chsdap_listWidget.count())]
+        chspot_list = [str(self.chspot_listWidget.item(i).text()) for i in range(self.chspot_listWidget.count())]
+        chsuan_list = [str(self.chsuan_listWidget.item(i).text()) for i in range(self.chsuan_listWidget.count())]
+        chsurea_list = [str(self.chsurea_listWidget.item(i).text()) for i in range(self.chsurea_listWidget.count())]
+        buckdap_list = [str(self.buckdap_listWidget.item(i).text()) for i in range(self.buckdap_listWidget.count())]
+        buckpot_list = [str(self.buckpot_listWidget.item(i).text()) for i in range(self.buckpot_listWidget.count())]
+        buckuan_list = [str(self.buckuan_listWidget.item(i).text()) for i in range(self.buckuan_listWidget.count())]
+        buckurea_list = [str(self.buckurea_listWidget.item(i).text()) for i in range(self.buckurea_listWidget.count())] 
+        cru_list = [str(self.CRU_listWidget.item(i).text()) for i in range(self.CRU_listWidget.count())]
+        avgcorn_list = [str(self.avg_listWidget.item(i).text()) for i in range(self.avg_listWidget.count())]
+        lowcorn_list = [str(self.low_listWidget.item(i).text()) for i in range(self.low_listWidget.count())]
+        highcorn_list = [str(self.high_listWidget.item(i).text()) for i in range(self.high_listWidget.count())]
+        avgsoy_list = [str(self.avg_listWidget_2.item(i).text()) for i in range(self.avg_listWidget_2.count())]
+        lowsoy_list = [str(self.low_listWidget_2.item(i).text()) for i in range(self.low_listWidget_2.count())]
+        highsoy_list = [str(self.high_listWidget_2.item(i).text()) for i in range(self.high_listWidget_2.count())]   
+        avgso_list = [str(self.avg_listWidget_3.item(i).text()) for i in range(self.avg_listWidget_3.count())]
+        lowso_list = [str(self.low_listWidget_3.item(i).text()) for i in range(self.low_listWidget_3.count())]
+        highso_list = [str(self.high_listWidget_3.item(i).text()) for i in range(self.high_listWidget_3.count())]  
+        avgwheat_list = [str(self.avg_listWidget_4.item(i).text()) for i in range(self.avg_listWidget_4.count())]
+        lowwheat_list = [str(self.low_listWidget_4.item(i).text()) for i in range(self.low_listWidget_4.count())]
+        highwheat_list = [str(self.high_listWidget_4.item(i).text()) for i in range(self.high_listWidget_4.count())]  
+        avgwti_list = [str(self.avg_listWidget_5.item(i).text()) for i in range(self.avg_listWidget_5.count())]
+        lowwti_list = [str(self.low_listWidget_5.item(i).text()) for i in range(self.low_listWidget_5.count())]
+        highwti_list = [str(self.high_listWidget_5.item(i).text()) for i in range(self.high_listWidget_5.count())]   
+        avgng_list = [str(self.avg_listWidget_6.item(i).text()) for i in range(self.avg_listWidget_6.count())]
+        lowng_list = [str(self.low_listWidget_6.item(i).text()) for i in range(self.low_listWidget_6.count())]
+        highng_list = [str(self.high_listWidget_6.item(i).text()) for i in range(self.high_listWidget_6.count())]   
+        avgcot_list = [str(self.avg_listWidget_7.item(i).text()) for i in range(self.avg_listWidget_7.count())]
+        lowcot_list = [str(self.low_listWidget_7.item(i).text()) for i in range(self.low_listWidget_7.count())]
+        highcot_list = [str(self.high_listWidget_7.item(i).text()) for i in range(self.high_listWidget_7.count())]  
+        avgal_list = [str(self.avg_listWidget_8.item(i).text()) for i in range(self.avg_listWidget_8.count())]
+        lowal_list = [str(self.low_listWidget_8.item(i).text()) for i in range(self.low_listWidget_8.count())]
+        highal_list = [str(self.high_listWidget_8.item(i).text()) for i in range(self.high_listWidget_8.count())] 
+        avgara_list = [str(self.avg_listWidget_9.item(i).text()) for i in range(self.avg_listWidget_9.count())]
+        lowara_list = [str(self.low_listWidget_9.item(i).text()) for i in range(self.low_listWidget_9.count())]
+        highara_list = [str(self.high_listWidget_9.item(i).text()) for i in range(self.high_listWidget_9.count())]  
+        avgrb_list = [str(self.avg_listWidget_10.item(i).text()) for i in range(self.avg_listWidget_10.count())]
+        lowrb_list = [str(self.low_listWidget_10.item(i).text()) for i in range(self.low_listWidget_10.count())]
+        highrb_list = [str(self.high_listWidget_10.item(i).text()) for i in range(self.high_listWidget_10.count())]      
+        avgcu_list = [str(self.avg_listWidget_11.item(i).text()) for i in range(self.avg_listWidget_11.count())]
+        lowcu_list = [str(self.low_listWidget_11.item(i).text()) for i in range(self.low_listWidget_11.count())]
+        highcu_list = [str(self.high_listWidget_11.item(i).text()) for i in range(self.high_listWidget_11.count())]  
+        avgau_list = [str(self.avg_listWidget_12.item(i).text()) for i in range(self.avg_listWidget_12.count())]
+        lowau_list = [str(self.low_listWidget_12.item(i).text()) for i in range(self.low_listWidget_12.count())]
+        highau_list = [str(self.high_listWidget_12.item(i).text()) for i in range(self.high_listWidget_12.count())]   
+        avgho_list = [str(self.avg_listWidget_13.item(i).text()) for i in range(self.avg_listWidget_13.count())]
+        lowho_list = [str(self.low_listWidget_13.item(i).text()) for i in range(self.low_listWidget_13.count())]
+        highho_list = [str(self.high_listWidget_13.item(i).text()) for i in range(self.high_listWidget_13.count())] 
+        avgice_list = [str(self.avg_listWidget_14.item(i).text()) for i in range(self.avg_listWidget_14.count())]
+        lowice_list = [str(self.low_listWidget_14.item(i).text()) for i in range(self.low_listWidget_14.count())]
+        highice_list = [str(self.high_listWidget_14.item(i).text()) for i in range(self.high_listWidget_14.count())]
+        avgfe_list = [str(self.avg_listWidget_15.item(i).text()) for i in range(self.avg_listWidget_15.count())]
+        lowfe_list = [str(self.low_listWidget_15.item(i).text()) for i in range(self.low_listWidget_15.count())]
+        highfe_list = [str(self.high_listWidget_15.item(i).text()) for i in range(self.high_listWidget_15.count())] 
+        avgpb_list = [str(self.avg_listWidget_16.item(i).text()) for i in range(self.avg_listWidget_16.count())]
+        lowpb_list = [str(self.low_listWidget_16.item(i).text()) for i in range(self.low_listWidget_16.count())]
+        highpb_list = [str(self.high_listWidget_16.item(i).text()) for i in range(self.high_listWidget_16.count())]    
+        avgnbp_list = [str(self.avg_listWidget_17.item(i).text()) for i in range(self.avg_listWidget_17.count())]
+        lownbp_list = [str(self.low_listWidget_17.item(i).text()) for i in range(self.low_listWidget_17.count())]
+        highnbp_list = [str(self.high_listWidget_17.item(i).text()) for i in range(self.high_listWidget_17.count())]  
+        avgni_list = [str(self.avg_listWidget_18.item(i).text()) for i in range(self.avg_listWidget_18.count())]
+        lowni_list = [str(self.low_listWidget_18.item(i).text()) for i in range(self.low_listWidget_18.count())]
+        highni_list = [str(self.high_listWidget_18.item(i).text()) for i in range(self.high_listWidget_18.count())]      
+        avgpa_list = [str(self.avg_listWidget_19.item(i).text()) for i in range(self.avg_listWidget_19.count())]
+        lowpa_list = [str(self.low_listWidget_19.item(i).text()) for i in range(self.low_listWidget_19.count())]
+        highpa_list = [str(self.high_listWidget_19.item(i).text()) for i in range(self.high_listWidget_19.count())] 
+        avgpt_list = [str(self.avg_listWidget_20.item(i).text()) for i in range(self.avg_listWidget_20.count())]
+        lowpt_list = [str(self.low_listWidget_20.item(i).text()) for i in range(self.low_listWidget_20.count())]
+        highpt_list = [str(self.high_listWidget_20.item(i).text()) for i in range(self.high_listWidget_20.count())]
+        avgrbob_list = [str(self.avg_listWidget_21.item(i).text()) for i in range(self.avg_listWidget_21.count())]
+        lowrbob_list = [str(self.low_listWidget_21.item(i).text()) for i in range(self.low_listWidget_21.count())]
+        highrbob_list = [str(self.high_listWidget_21.item(i).text()) for i in range(self.high_listWidget_21.count())]  
+        avgag_list = [str(self.avg_listWidget_22.item(i).text()) for i in range(self.avg_listWidget_22.count())]
+        lowag_list = [str(self.low_listWidget_22.item(i).text()) for i in range(self.low_listWidget_22.count())]
+        highag_list = [str(self.high_listWidget_22.item(i).text()) for i in range(self.high_listWidget_22.count())] 
+        avgst_list = [str(self.avg_listWidget_23.item(i).text()) for i in range(self.avg_listWidget_23.count())]
+        lowst_list = [str(self.low_listWidget_23.item(i).text()) for i in range(self.low_listWidget_23.count())]
+        highst_list = [str(self.high_listWidget_23.item(i).text()) for i in range(self.high_listWidget_23.count())]  
+        avgsb_list = [str(self.avg_listWidget_24.item(i).text()) for i in range(self.avg_listWidget_24.count())]
+        lowsb_list = [str(self.low_listWidget_24.item(i).text()) for i in range(self.low_listWidget_24.count())]
+        highsb_list = [str(self.high_listWidget_24.item(i).text()) for i in range(self.high_listWidget_24.count())]  
+        avgtn_list = [str(self.avg_listWidget_25.item(i).text()) for i in range(self.avg_listWidget_25.count())]
+        lowtn_list = [str(self.low_listWidget_25.item(i).text()) for i in range(self.low_listWidget_25.count())]
+        hightn_list = [str(self.high_listWidget_25.item(i).text()) for i in range(self.high_listWidget_25.count())] 
+        avgur_list = [str(self.avg_listWidget_26.item(i).text()) for i in range(self.avg_listWidget_26.count())]
+        lowur_list = [str(self.low_listWidget_26.item(i).text()) for i in range(self.low_listWidget_26.count())]
+        highur_list = [str(self.high_listWidget_26.item(i).text()) for i in range(self.high_listWidget_26.count())] 
+        avgzn_list = [str(self.avg_listWidget_27.item(i).text()) for i in range(self.avg_listWidget_27.count())]
+        lowzn_list = [str(self.low_listWidget_27.item(i).text()) for i in range(self.low_listWidget_27.count())]
+        highzn_list = [str(self.high_listWidget_27.item(i).text()) for i in range(self.high_listWidget_27.count())]        
 #############################################################################################################################################################################
         #corresponding tickers to text lists
         ureagrancfr_ticlist = ['UREA_GRAN','UREA_GRAN_FRONT','UREA_GRAN_FRONT2','UREA_GRAN_FRONT3','UREA_GRAN_FRONT4','UREA_GRAN','UREA_GRAN','UREA_GRAN_FRONT','UREA_GRAN_FRONT2','UREA_GRAN_FRONT3',
@@ -584,6 +734,216 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
                              'UREA_LUX_USA','UREA_MYS_USA','UREA_MEX_USA','UREA_NAM_USA','UREA_NLD_USA','UREA_NER_USA','UREA_NGA_USA','UREA_NOR_USA','UREA_OMN_USA','UREA_PHL_USA','UREA_POL_USA','UREA_QAT_USA','UREA_KOR_USA','UREA_ROU_USA','UREA_RUS_USA','UREA_SAU_USA','UREA_SGP_USA','UREA_SVK_USA',
                              'UREA_ZAF_USA','UREA_ESP_USA','UREA_CHE_USA','UREA_TWN_USA','UREA_THA_USA','UREA_TTO_USA','UREA_TUR_USA','UREA_TKM_USA','UREA_UKR_USA','UREA_ARE_USA','UREA_GBR_USA','UREA_VEN_USA']
         imureadef_ticlist = ['UREA_DEF_WOR_USA','UREA_DEF_CAN_USA','UREA_DEF_CHN_USA','UREA_DEF_EGY_USA','UREA_DEF_DEU_USA','UREA_DEF_NLD_USA','UREA_DEF_QAT_USA','UREA_DEF_TTO_USA']
+        imureanesoi_ticlist = ['UREA_NESOI_WOR_USA','UREA_NESOI_DZA_USA','UREA_NESOI_BHR_USA','UREA_NESOI_BRA_USA','UREA_NESOI_CAN_USA','UREA_NESOI_CHN_USA','UREA_NESOI_HRV_USA','UREA_NESOI_DOM_USA','UREA_NESOI_EGY_USA','UREA_NESOI_FIN_USA','UREA_NESOI_FRA_USA','UREA_NESOI_DEU_USA','UREA_NESOI_HKG_USA',
+                               'UREA_NESOI_IND_USA','UREA_NESOI_IDN_USA','UREA_NESOI_JPN_USA','UREA_NESOI_KWT_USA','UREA_NESOI_LBY_USA','UREA_NESOI_LTU_USA','UREA_NESOI_MEX_USA','UREA_NESOI_NLD_USA','UREA_NESOI_OMN_USA','UREA_NESOI_POL_USA','UREA_NESOI_QAT_USA','UREA_NESOI_KOR_USA','UREA_NESOI_RUS_USA',
+                               'UREA_NESOI_SAU_USA','UREA_NESOI_SVK_USA','UREA_NESOI_ESP_USA','UREA_NESOI_CHE_USA','UREA_NESOI_TTO_USA','UREA_NESOI_TKM_USA','UREA_NESOI_ARE_USA','UREA_NESOI_GBR_USA','UREA_NESOI_VEN_USA']
+        imureasolid_ticlist = ['UREA_SOLID_WOR_USA','UREA_SOLID_DZA_USA','UREA_SOLID_AUT_USA','UREA_SOLID_BHR_USA','UREA_SOLID_BRA_USA','UREA_SOLID_CAN_USA','UREA_SOLID_CHN_USA','UREA_SOLID_HRV_USA','UREA_SOLID_DOM_USA','UREA_SOLID_EGY_USA','UREA_SOLID_FIN_USA','UREA_SOLID_DEU_USA','UREA_SOLID_GRC_USA',
+                               'UREA_SOLID_HKG_USA','UREA_SOLID_IND_USA','UREA_SOLID_IDN_USA','UREA_SOLID_IRL_USA','UREA_SOLID_ISR_USA','UREA_SOLID_JPN_USA','UREA_SOLID_KWT_USA','UREA_SOLID_LBY_USA','UREA_SOLID_LTU_USA','UREA_SOLID_MYS_USA','UREA_SOLID_MEX_USA','UREA_SOLID_NLD_USA','UREA_SOLID_NGA_USA',
+                               'UREA_SOLID_OMN_USA','UREA_SOLID_QAT_USA','UREA_SOLID_RUS_USA','UREA_SOLID_SAU_USA','UREA_SOLID_CHE_USA','UREA_SOLID_TTO_USA','UREA_SOLID_ARE_USA','UREA_SOLID_VEN_USA']
+        imureaaq_ticlist = ['UREA_AQUES_WOR_USA','UREA_AQUES_ARG_USA','UREA_AQUES_AUS_USA','UREA_AQUES_AUT_USA','UREA_AQUES_BHS_USA','UREA_AQUES_BHR_USA','UREA_AQUES_BGD_USA','UREA_AQUES_BLR_USA','UREA_AQUES_BEL_USA','UREA_AQUES_BLZ_USA','UREA_AQUES_BIH_USA','UREA_AQUES_BRA_USA','UREA_AQUES_BGR_USA',
+                            'UREA_AQUES_CAN_USA','UREA_AQUES_TCD_USA','UREA_AQUES_CHL_USA','UREA_AQUES_CHN_USA','UREA_AQUES_HRV_USA','UREA_AQUES_DNK_USA','UREA_AQUES_DOM_USA','UREA_AQUES_EGY_USA','UREA_AQUES_EST_USA','UREA_AQUES_FIN_USA','UREA_AQUES_FRA_USA','UREA_AQUES_GEO_USA','UREA_AQUES_DEU_USA',
+                            'UREA_AQUES_HKG_USA','UREA_AQUES_IND_USA','UREA_AQUES_IDN_USA','UREA_AQUES_IRL_USA','UREA_AQUES_ISR_USA','UREA_AQUES_ITA_USA','UREA_AQUES_JAM_USA','UREA_AQUES_JPN_USA','UREA_AQUES_KWT_USA','UREA_AQUES_LVA_USA','UREA_AQUES_LBY_USA','UREA_AQUES_LIE_USA','UREA_AQUES_LTU_USA',
+                            'UREA_AQUES_LUX_USA','UREA_AQUES_MYS_USA','UREA_AQUES_MEX_USA','UREA_AQUES_NAM_USA','UREA_AQUES_NLD_USA','UREA_AQUES_NER_USA','UREA_AQUES_NGA_USA','UREA_AQUES_NOR_USA','UREA_AQUES_OMN_USA','UREA_AQUES_PHL_USA','UREA_AQUES_POL_USA','UREA_AQUES_QAT_USA','UREA_AQUES_KOR_USA',
+                            'UREA_AQUES_ROU_USA','UREA_AQUES_RUS_USA','UREA_AQUES_SAU_USA','UREA_AQUES_SGP_USA','UREA_AQUES_SVK_USA','UREA_AQUES_ZAF_USA','UREA_AQUES_ESP_USA','UREA_AQUES_CHE_USA','UREA_AQUES_TWN_USA','UREA_AQUES_THA_USA','UREA_AQUES_TTO_USA','UREA_AQUES_TUR_USA','UREA_AQUES_UKR_USA',
+                            'UREA_AQUES_ARE_USA','UREA_AQUES_GBR_USA','UREA_AQUES_VEN_USA']
+        exammtot_ticlist = ['AMM_CAN_WOR','AMM_CAN_GRL','AMM_CAN_JPN','AMM_CAN_MEX','AMM_CAN_NOR','AMM_CAN_PHL','AMM_CAN_KOR','AMM_CAN_SPM','AMM_CAN_TWN','AMM_CAN_USA','AMM_USA_WOR','AMM_USA_AGO','AMM_USA_ATG','AMM_USA_ABW','AMM_USA_AUS','AMM_USA_AUT','AMM_USA_BHS','AMM_USA_BRB','AMM_USA_BEL','AMM_USA_BLZ',
+                            'AMM_USA_BRA','AMM_USA_VGB','AMM_USA_CAN','AMM_USA_CHL','AMM_USA_CHN','AMM_USA_COL','AMM_USA_CRI','AMM_USA_DOM','AMM_USA_FRA','AMM_USA_DEU','AMM_USA_GUY','AMM_USA_HTI','AMM_USA_HND','AMM_USA_HKG','AMM_USA_IND','AMM_USA_IRL','AMM_USA_ISR','AMM_USA_ITA','AMM_USA_JAM','AMM_USA_JPN',
+                            'AMM_USA_JOR','AMM_USA_KWT','AMM_USA_LBR','AMM_USA_MDG','AMM_USA_MHL','AMM_USA_MEX','AMM_USA_MAR','AMM_USA_NLD-CUR','AMM_USA_NLD','AMM_USA_ANT','AMM_USA_NGA','AMM_USA_NOR','AMM_USA_PAN','AMM_USA_PER','AMM_USA_POL','AMM_USA_QAT','AMM_USA_KOR','AMM_USA_ROU','AMM_USA_RUS','AMM_USA_KNA',
+                            'AMM_USA_SAU','AMM_USA_SGP','AMM_USA_ESP','AMM_USA_SUR','AMM_USA_SWE','AMM_USA_TWN','AMM_USA_THA','AMM_USA_TTO','AMM_USA_TUR','AMM_USA_ARE','AMM_USA_GBR','AMM_USA_VEN']
+        examman_ticlist = ['AMM_AHYD_USA_WOR','AMM_AHYD_USA_AGO','AMM_AHYD_USA_ATG','AMM_AHYD_USA_ABW','AMM_AHYD_USA_AUS','AMM_AHYD_USA_AUT','AMM_AHYD_USA_BHS','AMM_AHYD_USA_BRB','AMM_AHYD_USA_BEL','AMM_AHYD_USA_BLZ','AMM_AHYD_USA_BRA','AMM_AHYD_USA_VGB','AMM_AHYD_USA_CAN','AMM_AHYD_USA_CHL','AMM_AHYD_USA_CHN',
+                           'AMM_AHYD_USA_COL','AMM_AHYD_USA_CRI','AMM_AHYD_USA_DOM','AMM_AHYD_USA_FRA','AMM_AHYD_USA_DEU','AMM_AHYD_USA_GUY','AMM_AHYD_USA_HTI','AMM_AHYD_USA_HND','AMM_AHYD_USA_HKG','AMM_AHYD_USA_IND','AMM_AHYD_USA_IRL','AMM_AHYD_USA_ISR','AMM_AHYD_USA_ITA','AMM_AHYD_USA_JAM','AMM_AHYD_USA_JPN',
+                           'AMM_AHYD_USA_JOR','AMM_AHYD_USA_KWT','AMM_AHYD_USA_LBR','AMM_AHYD_USA_MDG','AMM_AHYD_USA_MHL','AMM_AHYD_USA_MEX','AMM_AHYD_USA_MAR','AMM_AHYD_USA_NLD-CUR','AMM_AHYD_USA_NLD','AMM_AHYD_USA_ANT','AMM_AHYD_USA_NGA','AMM_AHYD_USA_NOR','AMM_AHYD_USA_PAN','AMM_AHYD_USA_PER',
+                           'AMM_AHYD_USA_POL','AMM_AHYD_USA_QAT','AMM_AHYD_USA_KOR','AMM_AHYD_USA_ROU','AMM_AHYD_USA_RUS','AMM_AHYD_USA_KNA','AMM_AHYD_USA_SAU','AMM_AHYD_USA_SGP','AMM_AHYD_USA_ESP','AMM_AHYD_USA_SUR','AMM_AHYD_USA_SWE','AMM_AHYD_USA_TWN','AMM_AHYD_USA_THA','AMM_AHYD_USA_TTO','AMM_AHYD_USA_TUR',
+                           'AMM_AHYD_USA_ARE','AMM_AHYD_USA_GBR','AMM_AHYD_USA_VEN']
+        exammnittot_ticlist = ['AMNT_USA_WOR','AMNT_USA_AFG','AMNT_USA_AIA','AMNT_USA_ATG','AMNT_USA_ARG','AMNT_USA_AUS','AMNT_USA_AUT','AMNT_USA_BHS','AMNT_USA_BEL','AMNT_USA_BLZ','AMNT_USA_BRA','AMNT_USA_VGB','AMNT_USA_CAN','AMNT_USA_CYM','AMNT_USA_CHN','AMNT_USA_COL','AMNT_USA_CRI','AMNT_USA_DMA',
+                               'AMNT_USA_DOM','AMNT_USA_ECU','AMNT_USA_ETH','AMNT_USA_FRA','AMNT_USA_PYF','AMNT_USA_DEU','AMNT_USA_GTM','AMNT_USA_HND','AMNT_USA_HKG','AMNT_USA_IDN','AMNT_USA_ISR','AMNT_USA_JAM','AMNT_USA_MEX','AMNT_USA_NLD','AMNT_USA_NZL','AMNT_USA_PAN','AMNT_USA_PHL','AMNT_USA_QAT',
+                               'AMNT_USA_KOR','AMNT_USA_LCA','AMNT_USA_VCT','AMNT_USA_SGP','AMNT_USA_TWN','AMNT_USA_TUR','AMNT_USA_UKR','AMNT_USA_GBR']
+        exammnitaq_ticlist = ['AMNT_AQUES_USA_WOR','AMNT_AQUES_USA_AFG','AMNT_AQUES_USA_AIA','AMNT_AQUES_USA_ATG','AMNT_AQUES_USA_ARG','AMNT_AQUES_USA_AUS','AMNT_AQUES_USA_AUT','AMNT_AQUES_USA_BHS','AMNT_AQUES_USA_BEL','AMNT_AQUES_USA_BLZ','AMNT_AQUES_USA_BRA','AMNT_AQUES_USA_VGB','AMNT_AQUES_USA_CAN',
+                              'AMNT_AQUES_USA_CYM','AMNT_AQUES_USA_CHN','AMNT_AQUES_USA_COL','AMNT_AQUES_USA_CRI','AMNT_AQUES_USA_DMA','AMNT_AQUES_USA_DOM','AMNT_AQUES_USA_ECU','AMNT_AQUES_USA_ETH','AMNT_AQUES_USA_FRA','AMNT_AQUES_USA_PYF','AMNT_AQUES_USA_DEU','AMNT_AQUES_USA_GTM','AMNT_AQUES_USA_HND',
+                              'AMNT_AQUES_USA_HKG','AMNT_AQUES_USA_IDN','AMNT_AQUES_USA_ISR','AMNT_AQUES_USA_JAM','AMNT_AQUES_USA_MEX','AMNT_AQUES_USA_NLD','AMNT_AQUES_USA_NZL','AMNT_AQUES_USA_PAN','AMNT_AQUES_USA_PHL','AMNT_AQUES_USA_QAT','AMNT_AQUES_USA_KOR','AMNT_AQUES_USA_LCA','AMNT_AQUES_USA_VCT',
+                              'AMNT_AQUES_USA_SGP','AMNT_AQUES_USA_TWN','AMNT_AQUES_USA_TUR','AMNT_AQUES_USA_UKR','AMNT_AQUES_USA_GBR']
+        exammsu_ticlist = ['AMSF_CAN_WOR','AMSF_CAN_ARG','AMSF_CAN_AUS','AMSF_CAN_BMU','AMSF_CAN_BRA','AMSF_CAN_CRI','AMSF_CAN_SLV','AMSF_CAN_FJI','AMSF_CAN_FRA','AMSF_CAN_DEU','AMSF_CAN_GTM','AMSF_CAN_GUY','AMSF_CAN_IDN','AMSF_CAN_JPN','AMSF_CAN_MYS','AMSF_CAN_MEX','AMSF_CAN_NZL','AMSF_CAN_PHL',
+                           'AMSF_CAN_RUS','AMSF_CAN_SGP','AMSF_CAN_THA','AMSF_CAN_USA','AMSF_USA_WOR','AMSF_USA_ARG','AMSF_USA_AUS','AMSF_USA_AUT','AMSF_USA_BHS','AMSF_USA_BRB','AMSF_USA_BEL','AMSF_USA_BLZ','AMSF_USA_BOL','AMSF_USA_BIH','AMSF_USA_BRA','AMSF_USA_CMR','AMSF_USA_CAN','AMSF_USA_CYM',
+                           'AMSF_USA_CHL','AMSF_USA_CHN','AMSF_USA_COL','AMSF_USA_CRI','AMSF_USA_CIV','AMSF_USA_DNK','AMSF_USA_DOM','AMSF_USA_ECU','AMSF_USA_SLV','AMSF_USA_ETH','AMSF_USA_FRA','AMSF_USA_DEU','AMSF_USA_GHA','AMSF_USA_GTM','AMSF_USA_GUY','AMSF_USA_HTI','AMSF_USA_HND','AMSF_USA_HKG',
+                           'AMSF_USA_IND','AMSF_USA_IRL','AMSF_USA_ISR','AMSF_USA_JAM','AMSF_USA_JPN','AMSF_USA_MEX','AMSF_USA_MOZ','AMSF_USA_NAM','AMSF_USA_NLD-CUR','AMSF_USA_NLD','AMSF_USA_ANT','AMSF_USA_NZL','AMSF_USA_NIC','AMSF_USA_NGA','AMSF_USA_PAN','AMSF_USA_PRY','AMSF_USA_PER','AMSF_USA_PHL',
+                           'AMSF_USA_POL','AMSF_USA_KOR','AMSF_USA_RUS','AMSF_USA_KNA','AMSF_USA_SAU','AMSF_USA_SEN','AMSF_USA_SGP','AMSF_USA_ZAF','AMSF_USA_ESP','AMSF_USA_CHE','AMSF_USA_TWN','AMSF_USA_THA','AMSF_USA_TGO','AMSF_USA_TTO','AMSF_USA_TUR','AMSF_USA_ARE','AMSF_USA_GBR','AMSF_USA_URY']
+        exdap_ticlist = ['DAP_AFR_WOR','DAP_EUR-CTL_WOR','DAP_CHN_WOR','DAP_ASIA-E_WOR','DAP_EUR-E-ASIA-CTL_WOR','DAP_E25_WOR','DAP_LTA_WOR','DAP_NA_WOR','DAP_OCE_WOR','DAP_ASIA-S_WOR','DAP_USA_WOR','DAP_USA_ATG','DAP_USA_ARG','DAP_USA_AUS','DAP_USA_BGD','DAP_USA_BRB','DAP_USA_BEL','DAP_USA_BLZ',
+                         'DAP_USA_BRA','DAP_USA_CMR','DAP_USA_CAN','DAP_USA_CAF','DAP_USA_CHL','DAP_USA_CHN','DAP_USA_COL','DAP_USA_CRI','DAP_USA_CIV','DAP_USA_CUB','DAP_USA_DJI','DAP_USA_DOM','DAP_USA_ECU','DAP_USA_SLV','DAP_USA_ETH','DAP_USA_FRA','DAP_USA_DEU','DAP_USA_GHA','DAP_USA_GLP','DAP_USA_GTM',
+                         'DAP_USA_GUY','DAP_USA_HND','DAP_USA_IND','DAP_USA_ITA','DAP_USA_JAM','DAP_USA_JPN','DAP_USA_KEN','DAP_USA_LBR','DAP_USA_MWI','DAP_USA_MLI','DAP_USA_MTQ','DAP_USA_MEX','DAP_USA_NPL','DAP_USA_NLD','DAP_USA_NZL','DAP_USA_NIC','DAP_USA_NGA','DAP_USA_NOR','DAP_USA_PAK','DAP_USA_PAN',
+                         'DAP_USA_PER','DAP_USA_PHL','DAP_USA_KOR','DAP_USA_SAU','DAP_USA_SEN','DAP_USA_ZAF','DAP_USA_TWN','DAP_USA_THA','DAP_USA_TGO','DAP_USA_TUR','DAP_USA_UGA','DAP_USA_GBR','DAP_USA_TZA','DAP_USA_URY','DAP_USA_VEN','DAP_USA_VNM','DAP_VAR_WOR','DAP_ASIA-W_WOR','DAP_EUR-W_WOR']
+        exnpk_ticlist = ['NPK-F_BRA_WOR']
+        exmaptot_ticlist = ['MAP_AFR_WOR','MAP_EUR-CTL_WOR','MAP_CHN_WOR','MAP_ASIA-E_WOR','MAP_EUR-E-ASIA-CTL_WOR','MAP_E25_WOR','MAP_LTA_WOR','MAP_NA_WOR','MAP_OCE_WOR','MAP_ASIA-S_WOR','MAP_USA_WOR','MAP_USA_ARG','MAP_USA_AUS','MAP_USA_BHS','MAP_USA_BRB','MAP_USA_BEL','MAP_USA_BLZ','MAP_USA_BRA',
+                            'MAP_USA_CAN','MAP_USA_CYM','MAP_USA_CHL','MAP_USA_CHN','MAP_USA_COL','MAP_USA_CRI','MAP_USA_DOM','MAP_USA_ECU','MAP_USA_SLV','MAP_USA_GNQ','MAP_USA_FRA','MAP_USA_DEU','MAP_USA_GTM','MAP_USA_GUY','MAP_USA_HND','MAP_USA_ISL','MAP_USA_IND','MAP_USA_IDN','MAP_USA_IRQ',
+                            'MAP_USA_ISR','MAP_USA_ITA','MAP_USA_JAM','MAP_USA_JPN','MAP_USA_KEN','MAP_USA_MYS','MAP_USA_MTQ','MAP_USA_MEX','MAP_USA_NLD','MAP_USA_NZL','MAP_USA_NIC','MAP_USA_NGA','MAP_USA_NOR','MAP_USA_OMN','MAP_USA_PAK','MAP_USA_PAN','MAP_USA_PER','MAP_USA_PRT','MAP_USA_KOR','MAP_USA_SGP',
+                            'MAP_USA_ZAF','MAP_USA_ESP','MAP_USA_TWN','MAP_USA_THA','MAP_USA_MKD','MAP_USA_TUR','MAP_USA_ARE','MAP_USA_GBR','MAP_USA_TZA','MAP_USA_URY','MAP_USA_VEN','MAP_USA_VNM','MAP_VAR_WOR','MAP_ASIA-W_WOR','MAP_EUR-W_WOR']
+        exmapmix_ticlist = ['MAP_MMDAP_USA_WOR','MAP_MMDAP_USA_ARG','MAP_MMDAP_USA_AUS','MAP_MMDAP_USA_BHS','MAP_MMDAP_USA_BRB','MAP_MMDAP_USA_BEL','MAP_MMDAP_USA_BLZ','MAP_MMDAP_USA_BRA','MAP_MMDAP_USA_CAN','MAP_MMDAP_USA_CYM','MAP_MMDAP_USA_CHL','MAP_MMDAP_USA_CHN','MAP_MMDAP_USA_COL','MAP_MMDAP_USA_CRI',
+                            'MAP_MMDAP_USA_DOM','MAP_MMDAP_USA_ECU','MAP_MMDAP_USA_SLV','MAP_MMDAP_USA_GNQ','MAP_MMDAP_USA_FRA','MAP_MMDAP_USA_DEU','MAP_MMDAP_USA_GTM','MAP_MMDAP_USA_GUY','MAP_MMDAP_USA_HND','MAP_MMDAP_USA_ISL','MAP_MMDAP_USA_IND','MAP_MMDAP_USA_IDN','MAP_MMDAP_USA_IRQ','MAP_MMDAP_USA_ISR',
+                            'MAP_MMDAP_USA_ITA','MAP_MMDAP_USA_JAM','MAP_MMDAP_USA_JPN','MAP_MMDAP_USA_KEN','MAP_MMDAP_USA_MYS','MAP_MMDAP_USA_MTQ','MAP_MMDAP_USA_MEX','MAP_MMDAP_USA_NLD','MAP_MMDAP_USA_NZL','MAP_MMDAP_USA_NIC','MAP_MMDAP_USA_NGA','MAP_MMDAP_USA_NOR','MAP_MMDAP_USA_OMN','MAP_MMDAP_USA_PAK',
+                            'MAP_MMDAP_USA_PAN','MAP_MMDAP_USA_PER','MAP_MMDAP_USA_PRT','MAP_MMDAP_USA_KOR','MAP_MMDAP_USA_SGP','MAP_MMDAP_USA_ZAF','MAP_MMDAP_USA_ESP','MAP_MMDAP_USA_TWN','MAP_MMDAP_USA_THA','MAP_MMDAP_USA_MKD','MAP_MMDAP_USA_TUR','MAP_MMDAP_USA_ARE','MAP_MMDAP_USA_GBR','MAP_MMDAP_USA_TZA',
+                            'MAP_MMDAP_USA_URY','MAP_MMDAP_USA_VEN','MAP_MMDAP_USA_VNM']
+        exphosac_ticlist = ['PHO-ACD_WOR_TOT','PHO-ACD_AFR_WOR','PHO-ACD_EUR-CTL_WOR','PHO-ACD_ASIA-E_WOR','PHO-ACD_EUR-E-ASIA-CTL_WOR','PHO-ACD_E25_WOR','PHO-ACD_LTA_WOR','PHO-ACD_NA_WOR','PHO-ACD_OCE_WOR','PHO-ACD_ASIA-S_WOR','PHO-ACD_ASIA-W_WOR','PHO-ACD_EUR-W_WOR']
+        expot_ticlist = ['POT_WOR_TOT','POT_AFR_WOR','POT_CAN_WOR','POT_CAN_ARG','POT_CAN_AUS','POT_CAN_BGD','POT_CAN_BRB','POT_CAN_BEL','POT_CAN_BLZ','POT_CAN_BRA','POT_CAN_CMR','POT_CAN_CHL','POT_CAN_CHN','POT_CAN_COL','POT_CAN_CRI','POT_CAN_CIV','POT_CAN_CUB','POT_CAN_DNK','POT_CAN_DMA','POT_CAN_DOM',
+                         'POT_CAN_ECU','POT_CAN_SLV','POT_CAN_FJI','POT_CAN_FRA','POT_CAN_DEU','POT_CAN_GHA','POT_CAN_GTM','POT_CAN_GUY','POT_CAN_HND','POT_CAN_IND','POT_CAN_IDN','POT_CAN_IRL','POT_CAN_ISR','POT_CAN_ITA','POT_CAN_JAM','POT_CAN_JPN','POT_CAN_LVA','POT_CAN_LBR','POT_CAN_MWI','POT_CAN_MYS',
+                         'POT_CAN_MTQ','POT_CAN_MEX','POT_CAN_MAR','POT_CAN_NLD','POT_CAN_ANT','POT_CAN_NZL','POT_CAN_NIC','POT_CAN_NGA','POT_CAN_PAK','POT_CAN_PAN','POT_CAN_PER','POT_CAN_PHL','POT_CAN_PRT','POT_CAN_SAU','POT_CAN_SEN','POT_CAN_SGP','POT_CAN_ZAF','POT_CAN_KOR','POT_CAN_ESP','POT_CAN_TWN',
+                         'POT_CAN_THA','POT_CAN_TGO','POT_CAN_GBR','POT_CAN_USA','POT_CAN_URY','POT_CAN_VEN','POT_CAN_VNM','POT_EUR-CTL_WOR','POT_ASIA-E_WOR','POT_EUR-E-ASIA-CTL_WOR','POT_E25_WOR','POT_LTA_WOR','POT_NA_WOR','POT_OCE_WOR','POT_ASIA-S_WOR','POT_USA_WOR','POT_USA_AFG','POT_USA_AND',
+                         'POT_USA_AGO','POT_USA_ARG','POT_USA_AUS','POT_USA_AUT','POT_USA_BHS','POT_USA_BHR','POT_USA_BRB','POT_USA_BEL','POT_USA_BLZ','POT_USA_BOL','POT_USA_BRA','POT_USA_CAN','POT_USA_CHL','POT_USA_CHN','POT_USA_COL','POT_USA_CRI','POT_USA_CIV','POT_USA_CZE','POT_USA_COD','POT_USA_DNK',
+                         'POT_USA_DOM','POT_USA_ECU','POT_USA_EGY','POT_USA_SLV','POT_USA_GNQ','POT_USA_FRA','POT_USA_GAB','POT_USA_DEU','POT_USA_GHA','POT_USA_GLP','POT_USA_GTM','POT_USA_GUY','POT_USA_HTI','POT_USA_HND','POT_USA_IND','POT_USA_IDN','POT_USA_IRL','POT_USA_ISR','POT_USA_ITA','POT_USA_JAM',
+                         'POT_USA_JPN','POT_USA_LBN','POT_USA_LBR','POT_USA_LBY','POT_USA_MDG','POT_USA_MYS','POT_USA_MLT','POT_USA_MTQ','POT_USA_MEX','POT_USA_MCO','POT_USA_NLD','POT_USA_NZL','POT_USA_NIC','POT_USA_NGA','POT_USA_OMN','POT_USA_PAN','POT_USA_PER','POT_USA_PHL','POT_USA_POL','POT_USA_QAT',
+                         'POT_USA_KOR','POT_USA_ROU','POT_USA_RUS','POT_USA_KNA','POT_USA_SAU','POT_USA_SGP','POT_USA_SVN','POT_USA_ZAF','POT_USA_ESP','POT_USA_CHE','POT_USA_TWN','POT_USA_THA','POT_USA_TTO','POT_USA_TUN','POT_USA_TUR','POT_USA_TKM','POT_USA_ARE','POT_USA_GBR','POT_USA_URY','POT_USA_VUT',
+                         'POT_USA_VEN','POT_USA_VNM','POT_ASIA-W_WOR','POT_EUR-W_WOR']
+        extsptot_ticlist = ['TSP_CHN_WOR','TSP_USA_WOR','TSP_USA_AUT','TSP_USA_BHS','TSP_USA_BOL','TSP_USA_BRA','TSP_USA_CMR','TSP_USA_CAN','TSP_USA_CHL','TSP_USA_CHN','TSP_USA_COL','TSP_USA_CRI','TSP_USA_DOM','TSP_USA_ECU','TSP_USA_SLV','TSP_USA_FRA','TSP_USA_DEU','TSP_USA_GHA','TSP_USA_GTM','TSP_USA_GUY',
+                            'TSP_USA_HND','TSP_USA_HKG','TSP_USA_IND','TSP_USA_LBN','TSP_USA_MYS','TSP_USA_MEX','TSP_USA_NOR','TSP_USA_PAK','TSP_USA_PER','TSP_USA_KOR','TSP_USA_ESP','TSP_USA_SWE','TSP_USA_TTO','TSP_USA_UKR','TSP_USA_GBR','TSP_USA_VEN','TSP_USA_VNM']  
+        extspless_ticlist = ['TSP_T-LT40_USA_WOR','TSP_T-LT40_USA_AUT','TSP_T-LT40_USA_BHS','TSP_T-LT40_USA_BOL','TSP_T-LT40_USA_CMR','TSP_T-LT40_USA_CAN','TSP_T-LT40_USA_CHN','TSP_T-LT40_USA_COL','TSP_T-LT40_USA_CRI','TSP_T-LT40_USA_DOM','TSP_T-LT40_USA_ECU','TSP_T-LT40_USA_FRA','TSP_T-LT40_USA_DEU',
+                             'TSP_T-LT40_USA_GHA','TSP_T-LT40_USA_GTM','TSP_T-LT40_USA_GUY','TSP_T-LT40_USA_HND','TSP_T-LT40_USA_HKG','TSP_T-LT40_USA_IND','TSP_T-LT40_USA_MYS','TSP_T-LT40_USA_MEX','TSP_T-LT40_USA_PAK','TSP_T-LT40_USA_ESP','TSP_T-LT40_USA_SWE','TSP_T-LT40_USA_TTO','TSP_T-LT40_USA_UKR',
+                             'TSP_T-LT40_USA_GBR','TSP_T-LT40_USA_VEN','TSP_T-LT40_USA_VNM']
+        extspgreat_ticlist = ['TSP_T-GE40_USA_WOR','TSP_T-GE40_USA_BHS','TSP_T-GE40_USA_BRA','TSP_T-GE40_USA_CAN','TSP_T-GE40_USA_CHL','TSP_T-GE40_USA_CHN','TSP_T-GE40_USA_CRI','TSP_T-GE40_USA_DOM','TSP_T-GE40_USA_ECU','TSP_T-GE40_USA_SLV','TSP_T-GE40_USA_HKG','TSP_T-GE40_USA_LBN','TSP_T-GE40_USA_MEX',
+                              'TSP_T-GE40_USA_NOR','TSP_T-GE40_USA_PER','TSP_T-GE40_USA_KOR','TSP_T-GE40_USA_ESP','TSP_T-GE40_USA_SWE','TSP_T-GE40_USA_VEN','TSP_T-GE40_USA_VNM']
+        exuantot_ticlist = ['UAN_USA_WOR','UAN_USA_ARG','UAN_USA_ABW','UAN_USA_AUS','UAN_USA_BHS','UAN_USA_BRB','UAN_USA_BEL','UAN_USA_BRA','UAN_USA_CAN','UAN_USA_CYM','UAN_USA_CHL','UAN_USA_CHN','UAN_USA_COL','UAN_USA_DMA','UAN_USA_FRA','UAN_USA_GTM','UAN_USA_HND','UAN_USA_IND','UAN_USA_IRL','UAN_USA_ISR',
+                            'UAN_USA_ITA','UAN_USA_JPN','UAN_USA_LBN','UAN_USA_MEX','UAN_USA_NLD','UAN_USA_NZL','UAN_USA_PER','UAN_USA_PHL','UAN_USA_PRT','UAN_USA_KOR','UAN_USA_ZAF','UAN_USA_TUR','UAN_USA_GBR','UAN_USA_URY']
+        exuanmix_ticlist = ['UAN_MUNAN_USA_WOR','UAN_MUNAN_USA_ARG','UAN_MUNAN_USA_ABW','UAN_MUNAN_USA_AUS','UAN_MUNAN_USA_BHS','UAN_MUNAN_USA_BRB','UAN_MUNAN_USA_BEL','UAN_MUNAN_USA_BRA','UAN_MUNAN_USA_CAN','UAN_MUNAN_USA_CYM','UAN_MUNAN_USA_CHL','UAN_MUNAN_USA_CHN','UAN_MUNAN_USA_COL','UAN_MUNAN_USA_DMA',
+                            'UAN_MUNAN_USA_FRA','UAN_MUNAN_USA_GTM','UAN_MUNAN_USA_HND','UAN_MUNAN_USA_IND','UAN_MUNAN_USA_IRL','UAN_MUNAN_USA_ISR','UAN_MUNAN_USA_ITA','UAN_MUNAN_USA_JPN','UAN_MUNAN_USA_LBN','UAN_MUNAN_USA_MEX','UAN_MUNAN_USA_NLD','UAN_MUNAN_USA_NZL','UAN_MUNAN_USA_PER','UAN_MUNAN_USA_PHL',
+                            'UAN_MUNAN_USA_PRT','UAN_MUNAN_USA_KOR','UAN_MUNAN_USA_ZAF','UAN_MUNAN_USA_TUR','UAN_MUNAN_USA_GBR','UAN_MUNAN_USA_URY']
+        exureatot_ticlist = ['UREA_WOR_TOT','UREA_AFR_WOR','UREA_CAN_WOR','UREA_CAN_ARG','UREA_CAN_AUS','UREA_CAN_AUT','UREA_CAN_BEL','UREA_CAN_BMU','UREA_CAN_BRA','UREA_CAN_CHL','UREA_CAN_CHN','UREA_CAN_CUB','UREA_CAN_DOM','UREA_CAN_FRA','UREA_CAN_DEU','UREA_CAN_HKG','UREA_CAN_IRL','UREA_CAN_ITA',
+                             'UREA_CAN_JPN','UREA_CAN_MYS','UREA_CAN_MEX','UREA_CAN_NLD','UREA_CAN_NZL','UREA_CAN_NIC','UREA_CAN_QAT','UREA_CAN_KOR','UREA_CAN_SPM','UREA_CAN_SAU','UREA_CAN_SGP','UREA_CAN_ESP','UREA_CAN_SDN','UREA_CAN_SWE','UREA_CAN_CHE','UREA_CAN_GBR','UREA_CAN_USA','UREA_EUR-CTL_WOR',
+                             'UREA_CHN_WOR','UREA_ASIA-E_WOR','UREA_EUR-E-ASIA-CTL_WOR','UREA_E25_WOR','UREA_LTA_WOR','UREA_NA_WOR','UREA_OCE_WOR','UREA_ASIA-S_WOR','UREA_USA_WOR','UREA_USA_ARG','UREA_USA_AUS','UREA_USA_AUT','UREA_USA_BHS','UREA_USA_BHR','UREA_USA_BGD','UREA_USA_BRB','UREA_USA_BEL',
+                             'UREA_USA_BLZ','UREA_USA_BMU','UREA_USA_BOL','UREA_USA_BRA','UREA_USA_CAN','UREA_USA_CYM','UREA_USA_CHL','UREA_USA_CHN','UREA_USA_COL','UREA_USA_CRI','UREA_USA_CIV','UREA_USA_CYP','UREA_USA_CZE','UREA_USA_COD','UREA_USA_DNK','UREA_USA_DOM','UREA_USA_ECU','UREA_USA_EGY',
+                             'UREA_USA_SLV','UREA_USA_GNQ','UREA_USA_FRA','UREA_USA_GEO','UREA_USA_DEU','UREA_USA_GHA','UREA_USA_GRC','UREA_USA_GTM','UREA_USA_GUY','UREA_USA_HTI','UREA_USA_HND','UREA_USA_HKG','UREA_USA_ISL','UREA_USA_IND','UREA_USA_IDN','UREA_USA_IRL','UREA_USA_ISR','UREA_USA_ITA',
+                             'UREA_USA_JAM','UREA_USA_JPN','UREA_USA_JOR','UREA_USA_KAZ','UREA_USA_MAC','UREA_USA_MYS','UREA_USA_MTQ','UREA_USA_MEX','UREA_USA_MAR','UREA_USA_NLD-CUR','UREA_USA_NLD','UREA_USA_NZL','UREA_USA_NIC','UREA_USA_NOR','UREA_USA_PAN','UREA_USA_PER','UREA_USA_PHL','UREA_USA_POL',
+                             'UREA_USA_PRT','UREA_USA_KOR','UREA_USA_RUS','UREA_USA_LCA','UREA_USA_SAU','UREA_USA_SGP','UREA_USA_ZAF','UREA_USA_ESP','UREA_USA_SWE','UREA_USA_CHE','UREA_USA_TWN','UREA_USA_THA','UREA_USA_TTO','UREA_USA_TUR','UREA_USA_UKR','UREA_USA_ARE','UREA_USA_GBR','UREA_USA_URY',
+                             'UREA_USA_VEN','UREA_USA_VNM','UREA_ASIA-W_WOR','UREA_EUR-W_WOR']
+        exureaaq_ticlist = ['UREA_AQUES_USA_WOR','UREA_AQUES_USA_ARG','UREA_AQUES_USA_AUS','UREA_AQUES_USA_AUT','UREA_AQUES_USA_BHS','UREA_AQUES_USA_BHR','UREA_AQUES_USA_BGD','UREA_AQUES_USA_BRB','UREA_AQUES_USA_BEL','UREA_AQUES_USA_BLZ','UREA_AQUES_USA_BMU','UREA_AQUES_USA_BOL','UREA_AQUES_USA_BRA',
+                            'UREA_AQUES_USA_CAN','UREA_AQUES_USA_CYM','UREA_AQUES_USA_CHL','UREA_AQUES_USA_CHN','UREA_AQUES_USA_COL','UREA_AQUES_USA_CRI','UREA_AQUES_USA_CIV','UREA_AQUES_USA_CYP','UREA_AQUES_USA_CZE','UREA_AQUES_USA_COD','UREA_AQUES_USA_DNK','UREA_AQUES_USA_DOM','UREA_AQUES_USA_ECU',
+                            'UREA_AQUES_USA_EGY','UREA_AQUES_USA_SLV','UREA_AQUES_USA_GNQ','UREA_AQUES_USA_FRA','UREA_AQUES_USA_GEO','UREA_AQUES_USA_DEU','UREA_AQUES_USA_GHA','UREA_AQUES_USA_GRC','UREA_AQUES_USA_GTM','UREA_AQUES_USA_GUY','UREA_AQUES_USA_HTI','UREA_AQUES_USA_HND','UREA_AQUES_USA_HKG',
+                            'UREA_AQUES_USA_ISL','UREA_AQUES_USA_IND','UREA_AQUES_USA_IDN','UREA_AQUES_USA_IRL','UREA_AQUES_USA_ISR','UREA_AQUES_USA_ITA','UREA_AQUES_USA_JAM','UREA_AQUES_USA_JPN','UREA_AQUES_USA_JOR','UREA_AQUES_USA_KAZ','UREA_AQUES_USA_MAC','UREA_AQUES_USA_MYS','UREA_AQUES_USA_MTQ',
+                            'UREA_AQUES_USA_MEX','UREA_AQUES_USA_MAR','UREA_AQUES_USA_NLD-CUR','UREA_AQUES_USA_NLD','UREA_AQUES_USA_NZL','UREA_AQUES_USA_NIC','UREA_AQUES_USA_NOR','UREA_AQUES_USA_PAN','UREA_AQUES_USA_PER','UREA_AQUES_USA_PHL','UREA_AQUES_USA_POL','UREA_AQUES_USA_PRT','UREA_AQUES_USA_KOR',
+                            'UREA_AQUES_USA_RUS','UREA_AQUES_USA_LCA','UREA_AQUES_USA_SAU','UREA_AQUES_USA_SGP','UREA_AQUES_USA_ZAF','UREA_AQUES_USA_ESP','UREA_AQUES_USA_SWE','UREA_AQUES_USA_CHE','UREA_AQUES_USA_TWN','UREA_AQUES_USA_THA','UREA_AQUES_USA_TTO','UREA_AQUES_USA_TUR','UREA_AQUES_USA_UKR',
+                            'UREA_AQUES_USA_ARE','UREA_AQUES_USA_GBR','UREA_AQUES_USA_URY','UREA_AQUES_USA_VEN','UREA_AQUES_USA_VNM']
+        sdamm_ticlist = ['AMM_SD_WOR'] * 9  
+        sddapmapus_ticlist = ['DAP-MAP_SD_USA'] * 6
+        sddapmapall_ticlist = ['DAP-MAP_SD_WOR'] * 9     
+        sdpotus_ticlist = ['POT_SD_N-A'] * 6
+        sdpotall_ticlist = ['POT_SD_WOR'] * 9  
+        sduan_ticlist = ['UAN_SD_USA'] * 6 
+        sdureaus_ticlist = ['UREA_SD_USA'] * 6
+        sdureaall_ticlist = ['UREA_SD_WOR'] * 9 
+        dapbid_ticlist = ['DAP-MAP_BAL_BRA','DAP-MAP_BAL_IND-WC','DAP-MAP_CHN_IND-WC','DAP-MAP_CHN_MSS-RVR','DAP-MAP_CHN_PAK','DAP-MAP_MAR_BRA','DAP-MAP_MAR_MSS-RVR','DAP-MAP_RED-SEA_IND-WC','DAP-MAP_TAMPA_BRA','DAP-MAP_TAMPA_CHN','DAP-MAP_TAMPA_IND-WC','DAP-MAP_TAMPA_PAK','DAP-MAP_TUN_PAK','DAP-MAP_TUN_TUR'] 
+        dapoffer_ticlist = ['DAP-MAP_BAL_BRA','DAP-MAP_BAL_IND-WC','DAP-MAP_CHN_IND-WC','DAP-MAP_CHN_MSS-RVR','DAP-MAP_CHN_PAK','DAP-MAP_MAR_BRA','DAP-MAP_MAR_MSS-RVR','DAP-MAP_RED-SEA_IND-WC','DAP-MAP_TAMPA_BRA','DAP-MAP_TAMPA_CHN','DAP-MAP_TAMPA_IND-WC','DAP-MAP_TAMPA_PAK','DAP-MAP_TUN_PAK','DAP-MAP_TUN_TUR'] 
+        dapmid_ticlist = ['DAP-MAP_BAL_BRA','DAP-MAP_BAL_IND-WC','DAP-MAP_CHN_IND-WC','DAP-MAP_CHN_MSS-RVR','DAP-MAP_CHN_PAK','DAP-MAP_MAR_BRA','DAP-MAP_MAR_MSS-RVR','DAP-MAP_RED-SEA_IND-WC','DAP-MAP_TAMPA_BRA','DAP-MAP_TAMPA_CHN','DAP-MAP_TAMPA_IND-WC','DAP-MAP_TAMPA_PAK','DAP-MAP_TUN_PAK','DAP-MAP_TUN_TUR']           
+        mopbid_ticlist = ['MOP_BAL_BRA','MOP_BAL_CHN','MOP_BAL_IND-WC','MOP_BAL_ASIA-SE','MOP_BLK-SEA_IDN','MOP_ISR_BRA','MOP_RED-SEA_CHN','MOP_RED-SEA_IND-WC','MOP_RED-SEA_ASIA-SE','MOP_VAN_BRA','MOP_VAN_CHN','MOP_VAN_IND','MOP_VAN_ASIA-SE']
+        mopoffer_ticlist = ['MOP_BAL_BRA','MOP_BAL_CHN','MOP_BAL_IND-WC','MOP_BAL_ASIA-SE','MOP_BLK-SEA_IDN','MOP_ISR_BRA','MOP_RED-SEA_CHN','MOP_RED-SEA_IND-WC','MOP_RED-SEA_ASIA-SE','MOP_VAN_BRA','MOP_VAN_CHN','MOP_VAN_IND','MOP_VAN_ASIA-SE']
+        mopmid_ticlist = ['MOP_BAL_BRA','MOP_BAL_CHN','MOP_BAL_IND-WC','MOP_BAL_ASIA-SE','MOP_BLK-SEA_IDN','MOP_ISR_BRA','MOP_RED-SEA_CHN','MOP_RED-SEA_IND-WC','MOP_RED-SEA_ASIA-SE','MOP_VAN_BRA','MOP_VAN_CHN','MOP_VAN_IND','MOP_VAN_ASIA-SE']        
+        phorockbid_ticlist = ['PHO-RCK_MAR_IND-WC','PHO-RCK_RED-SEA_IND-WC']
+        phorockoffer_ticlist = ['PHO-RCK_MAR_IND-WC','PHO-RCK_RED-SEA_IND-WC']
+        phorockmid_ticlist = ['PHO-RCK_MAR_IND-WC','PHO-RCK_RED-SEA_IND-WC']
+        sulfurbid_ticlist = ['SUL_BLK-SEA_MAR','SUL_MEST_CHN','SUL_MEST_IND-EC','SUL_MEST_IND-WC','SUL_MEST_MAR','SUL_VAN_BRA','SUL_VAN_CHN']
+        sulfuroffer_ticlist = ['SUL_BLK-SEA_MAR','SUL_MEST_CHN','SUL_MEST_IND-EC','SUL_MEST_IND-WC','SUL_MEST_MAR','SUL_VAN_BRA','SUL_VAN_CHN']
+        sulfurmid_ticlist = ['SUL_BLK-SEA_MAR','SUL_MEST_CHN','SUL_MEST_IND-EC','SUL_MEST_IND-WC','SUL_MEST_MAR','SUL_VAN_BRA','SUL_VAN_CHN']
+        ureabid_ticlist = ['UREA_BAL_BRA','UREA_BAL_IND-WC','UREA_BAL_MEX-EC','UREA_BAL_MEX-WC','UREA_CHN_USG','UREA_EGY_USG','UREA_IDN_THA','UREA_MEST_IND-WC','UREA_MEST_MSS-RVR','UREA_MEST_VNM','UREA_CHN-N_IND-EC','UREA_YUZHNY_BRA','UREA_YUZHNY_IND-WC','UREA_YUZHNY_MEX-EC','UREA_YUZHNY_MEX-WC','UREA_YUZHNY_MDRA','UREA_YUZHNY_TUR']
+        ureaoffer_ticlist = ['UREA_BAL_BRA','UREA_BAL_IND-WC','UREA_BAL_MEX-EC','UREA_BAL_MEX-WC','UREA_CHN_USG','UREA_EGY_USG','UREA_IDN_THA','UREA_MEST_IND-WC','UREA_MEST_MSS-RVR','UREA_MEST_VNM','UREA_CHN-N_IND-EC','UREA_YUZHNY_BRA','UREA_YUZHNY_IND-WC','UREA_YUZHNY_MEX-EC','UREA_YUZHNY_MEX-WC','UREA_YUZHNY_MDRA','UREA_YUZHNY_TUR'] 
+        ureamid_ticlist = ['UREA_BAL_BRA','UREA_BAL_IND-WC','UREA_BAL_MEX-EC','UREA_BAL_MEX-WC','UREA_CHN_USG','UREA_EGY_USG','UREA_IDN_THA','UREA_MEST_IND-WC','UREA_MEST_MSS-RVR','UREA_MEST_VNM','UREA_CHN-N_IND-EC','UREA_YUZHNY_BRA','UREA_YUZHNY_IND-WC','UREA_YUZHNY_MEX-EC','UREA_YUZHNY_MEX-WC','UREA_YUZHNY_MDRA','UREA_YUZHNY_TUR']        
+        ammbid_ticlist = ['AMM_BAL_EUR-NW','AMM_MEST_FE','AMM_MEST_IND-EC','AMM_MEST_IND-WC','AMM_YUZHNY_FE','AMM_YUZHNY_MAR','AMM_YUZHNY_ASIA-NSE','AMM_YUZHNY_EUR-NW','AMM_YUZHNY_EUR-S','AMM_YUZHNY_TAMPA']
+        ammoffer_ticlist = ['AMM_BAL_EUR-NW','AMM_MEST_FE','AMM_MEST_IND-EC','AMM_MEST_IND-WC','AMM_YUZHNY_FE','AMM_YUZHNY_MAR','AMM_YUZHNY_ASIA-NSE','AMM_YUZHNY_EUR-NW','AMM_YUZHNY_EUR-S','AMM_YUZHNY_TAMPA']
+        ammmid_ticlist = ['AMM_BAL_EUR-NW','AMM_MEST_FE','AMM_MEST_IND-EC','AMM_MEST_IND-WC','AMM_YUZHNY_FE','AMM_YUZHNY_MAR','AMM_YUZHNY_ASIA-NSE','AMM_YUZHNY_EUR-NW','AMM_YUZHNY_EUR-S','AMM_YUZHNY_TAMPA']
+        phoacbid_ticlist = ['PHO-ACD_MAR_IND-WC','PHO-ACD_MAR_EUR-NW']
+        phoacoffer_ticlist = ['PHO-ACD_MAR_IND-WC','PHO-ACD_MAR_EUR-NW']
+        phoacmid_ticlist = ['PHO-ACD_MAR_IND-WC','PHO-ACD_MAR_EUR-NW']
+        sulacbid_ticlist = ['SUL-ACD_JPN-KOR_CHL','SUL-ACD_JPN-KOR_CHN','SUL-ACD_JPN-KOR_IND','SUL-ACD_EUR-NW_BRA','SUL-ACD_EUR-NW_AFR-N','SUL-ACD_EUR-NW_USG']
+        sulacoffer_ticlist = ['SUL-ACD_JPN-KOR_CHL','SUL-ACD_JPN-KOR_CHN','SUL-ACD_JPN-KOR_IND','SUL-ACD_EUR-NW_BRA','SUL-ACD_EUR-NW_AFR-N','SUL-ACD_EUR-NW_USG']
+        sulacmid_ticlist = ['SUL-ACD_JPN-KOR_CHL','SUL-ACD_JPN-KOR_CHN','SUL-ACD_JPN-KOR_IND','SUL-ACD_EUR-NW_BRA','SUL-ACD_EUR-NW_AFR-N','SUL-ACD_EUR-NW_USG']
+        uanbid_ticlist = ['UAN_BLK-SEA_FRA-ATL','UAN_BLK-SEA_USA-EC']
+        uanoffer_ticlist = ['UAN_BLK-SEA_FRA-ATL','UAN_BLK-SEA_USA-EC']
+        uanmid_ticlist = ['UAN_BLK-SEA_FRA-ATL','UAN_BLK-SEA_USA-EC']
+        chsdap_ticlist = ['DAP_TOT_ACT','DAP_TOT_FRONT','DAP_TOT_FRONT2','DAP_TOT_FRONT3','DAP_TOT_FRONT4','DAP_TOT_FRONT5','DAP_TOT_FRONT6','DAP_TOT_FRONT7','DAP_TOT_FRONT8','DAP_TOT_FRONT9','DAP_TOT_FRONT10','DAP_TOT_FRONT11','DAP_TOT_FRONT12'] * 2
+        chspot_ticlist = ['POT_TOT_ACT','POT_TOT_FRONT','POT_TOT_FRONT2','POT_TOT_FRONT3','POT_TOT_FRONT4','POT_TOT_FRONT5','POT_TOT_FRONT6','POT_TOT_FRONT7','POT_TOT_FRONT8','POT_TOT_FRONT9','POT_TOT_FRONT10','POT_TOT_FRONT11','POT_TOT_FRONT12'] * 2
+        chsuan_ticlist = ['UAN_TOT_ACT','DAP_TOT_FRONT','UAN_TOT_FRONT2','UAN_TOT_FRONT3','UAN_TOT_FRONT4','UAN_TOT_FRONT5','UAN_TOT_FRONT6','UAN_TOT_FRONT7','UAN_TOT_FRONT8','UAN_TOT_FRONT9','UAN_TOT_FRONT10','UAN_TOT_FRONT11','UAN_TOT_FRONT12'] * 2
+        chsurea_ticlist = ['UREA_GRAN_ACT','UREA_GRAN_FRONT','UREA_GRAN_FRONT2','UREA_GRAN_FRONT3','UREA_GRAN_FRONT4','UREA_GRAN_FRONT5','UREA_GRAN_FRONT6','UREA_GRAN_FRONT7','UREA_GRAN_FRONT8','UREA_GRAN_FRONT9','UREA_GRAN_FRONT10','UREA_GRAN_FRONT11','UREA_GRAN_FRONT12'] * 2
+        buckdap_ticlist = ['DAP_TOT_ACT','DAP_TOT_FRONT','DAP_TOT_FRONT2','DAP_TOT_FRONT3','DAP_TOT_FRONT4','DAP_TOT_FRONT5','DAP_TOT_FRONT6','DAP_TOT_FRONT7','DAP_TOT_FRONT8','DAP_TOT_FRONT9','DAP_TOT_FRONT10','DAP_TOT_FRONT11','DAP_TOT_FRONT12'] * 2
+        buckpot_ticlist = ['POT_TOT_ACT','POT_TOT_FRONT','POT_TOT_FRONT2','POT_TOT_FRONT3','POT_TOT_FRONT4','POT_TOT_FRONT5','POT_TOT_FRONT6','POT_TOT_FRONT7','POT_TOT_FRONT8','POT_TOT_FRONT9','POT_TOT_FRONT10','POT_TOT_FRONT11','POT_TOT_FRONT12'] * 2
+        buckuan_ticlist = ['UAN_TOT_ACT','DAP_TOT_FRONT','UAN_TOT_FRONT2','UAN_TOT_FRONT3','UAN_TOT_FRONT4','UAN_TOT_FRONT5','UAN_TOT_FRONT6','UAN_TOT_FRONT7','UAN_TOT_FRONT8','UAN_TOT_FRONT9','UAN_TOT_FRONT10','UAN_TOT_FRONT11','UAN_TOT_FRONT12'] * 2
+        buckurea_ticlist = ['UREA_GRAN_ACT','UREA_GRAN_FRONT','UREA_GRAN_FRONT2','UREA_GRAN_FRONT3','UREA_GRAN_FRONT4','UREA_GRAN_FRONT5','UREA_GRAN_FRONT6','UREA_GRAN_FRONT7','UREA_GRAN_FRONT8','UREA_GRAN_FRONT9','UREA_GRAN_FRONT10','UREA_GRAN_FRONT11','UREA_GRAN_FRONT12'] * 2        
+        cru_ticlist = ['DAP_TOT_ACT','DAP_TOT_FRONT','DAP_TOT_FRONT2','DAP_TOT_FRONT3','DAP_TOT_FRONT4','DAP_TOT_FRONT5','DAP_TOT_FRONT6','DAP_TOT_FRONT7','DAP_TOT_FRONT8','DAP_TOT_FRONT9','DAP_TOT_FRONT10','DAP_TOT_FRONT11','DAP_TOT_FRONT12',
+                       'UREA_GRAN_ACT','UREA_GRAN_FRONT','UREA_GRAN_FRONT2','UREA_GRAN_FRONT3','UREA_GRAN_FRONT4','UREA_GRAN_FRONT5','UREA_GRAN_FRONT6','UREA_GRAN_FRONT7','UREA_GRAN_FRONT8','UREA_GRAN_FRONT9','UREA_GRAN_FRONT10','UREA_GRAN_FRONT11','UREA_GRAN_FRONT12']
+        avgcorn_ticlist = ['C_Q1','C_Q2','C_Q3','C_Q4','C_Q5','C_Q6','C_Y2','C_Y3']  
+        lowcorn_ticlist = ['C_Q1','C_Q2','C_Q3','C_Q4','C_Q5','C_Q6','C_Y2','C_Y3'] 
+        highcorn_ticlist = ['C_Q1','C_Q2','C_Q3','C_Q4','C_Q5','C_Q6','C_Y2','C_Y3'] 
+        avgsoy_ticlist = ['S_Q1','S_Q2','S_Q3','S_Q4','S_Q5','S_Q6','S_Y2','S_Y3']  
+        lowsoy_ticlist = ['S_Q1','S_Q2','S_Q3','S_Q4','S_Q5','S_Q6','S_Y2','S_Y3'] 
+        highsoy_ticlist = ['S_Q1','S_Q2','S_Q3','S_Q4','S_Q5','S_Q6','S_Y2','S_Y3']  
+        avgso_ticlist = ['BO_Q1','BO_Q2','BO_Q3','BO_Q4','BO_Q5','BO_Q6','BO_Y2','BO_Y3']  
+        lowso_ticlist = ['BO_Q1','BO_Q2','BO_Q3','BO_Q4','BO_Q5','BO_Q6','BO_Y2','BO_Y3'] 
+        highso_ticlist = ['BO_Q1','BO_Q2','BO_Q3','BO_Q4','BO_Q5','BO_Q6','BO_Y2','BO_Y3']  
+        avgwheat_ticlist = ['W_Q1','W_Q2','W_Q3','W_Q4','W_Q5','W_Q6','W_Y2','W_Y3']  
+        lowwheat_ticlist = ['W_Q1','W_Q2','W_Q3','W_Q4','W_Q5','W_Q6','W_Y2','W_Y3'] 
+        highwheat_ticlist = ['W_Q1','W_Q2','W_Q3','W_Q4','W_Q5','W_Q6','W_Y2','W_Y3']  
+        avgwti_ticlist = ['CL_Q1','CL_Q2','CL_Q3','CL_Q4','CL_Q5','CL_Q6','CL_Y2','CL_Y3']  
+        lowwti_ticlist = ['CL_Q1','CL_Q2','CL_Q3','CL_Q4','CL_Q5','CL_Q6','CL_Y2','CL_Y3'] 
+        highwti_ticlist = ['CL_Q1','CL_Q2','CL_Q3','CL_Q4','CL_Q5','CL_Q6','CL_Y2','CL_Y3']  
+        avgng_ticlist = ['NG_Q1','NG_Q2','NG_Q3','NG_Q4','NG_Q5','NG_Q6','NG_Y2','NG_Y3']  
+        lowng_ticlist = ['NG_Q1','NG_Q2','NG_Q3','NG_Q4','NG_Q5','NG_Q6','NG_Y2','NG_Y3'] 
+        highng_ticlist = ['NG_Q1','NG_Q2','NG_Q3','NG_Q4','NG_Q5','NG_Q6','NG_Y2','NG_Y3']  
+        avgcot_ticlist = ['CT_Q1','CT_Q2','CT_Q3','CT_Q4','CT_Q5','CT_Q6','CT_Y2','CT_Y3']  
+        lowcot_ticlist = ['CT_Q1','CT_Q2','CT_Q3','CT_Q4','CT_Q5','CT_Q6','CT_Y2','CT_Y3'] 
+        highcot_ticlist = ['CT_Q1','CT_Q2','CT_Q3','CT_Q4','CT_Q5','CT_Q6','CT_Y2','CT_Y3'] 
+        avgal_ticlist = ['LA_Q1','LA_Q2','LA_Q3','LA_Q4','LA_Q5','LA_Q6','LA_Y2','LA_Y3']  
+        lowal_ticlist = ['LA_Q1','LA_Q2','LA_Q3','LA_Q4','LA_Q5','LA_Q6','LA_Y2','LA_Y3'] 
+        highal_ticlist = ['LA_Q1','LA_Q2','LA_Q3','LA_Q4','LA_Q5','LA_Q6','LA_Y2','LA_Y3']
+        avgara_ticlist = ['COA_Q1','COA_Q2','COA_Q3','COA_Q4','COA_Q5','COA_Q6','COA_Y2','COA_Y3']  
+        lowara_ticlist = ['COA_Q1','COA_Q2','COA_Q3','COA_Q4','COA_Q5','COA_Q6','COA_Y2','COA_Y3'] 
+        highara_ticlist = ['COA_Q1','COA_Q2','COA_Q3','COA_Q4','COA_Q5','COA_Q6','COA_Y2','COA_Y3']  
+        avgrb_ticlist = ['XO_Q1','XO_Q2','XO_Q3','XO_Q4','XO_Q5','XO_Q6','XO_Y2','XO_Y3']  
+        lowrb_ticlist = ['XO_Q1','XO_Q2','XO_Q3','XO_Q4','XO_Q5','XO_Q6','XO_Y2','XO_Y3'] 
+        highrb_ticlist = ['XO_Q1','XO_Q2','XO_Q3','XO_Q4','XO_Q5','XO_Q6','XO_Y2','XO_Y3']  
+        avgcu_ticlist = ['HG_Q1','HG_Q2','HG_Q3','HG_Q4','HG_Q5','HG_Q6','HG_Y2','HG_Y3']  
+        lowcu_ticlist = ['HG_Q1','HG_Q2','HG_Q3','HG_Q4','HG_Q5','HG_Q6','HG_Y2','HG_Y3'] 
+        highcu_ticlist = ['HG_Q1','HG_Q2','HG_Q3','HG_Q4','HG_Q5','HG_Q6','HG_Y2','HG_Y3'] 
+        avgau_ticlist = ['GC_Q1','GC_Q2','GC_Q3','GC_Q4','GC_Q5','GC_Q6','GC_Y2','GC_Y3']  
+        lowau_ticlist = ['GC_Q1','GC_Q2','GC_Q3','GC_Q4','GC_Q5','GC_Q6','GC_Y2','GC_Y3'] 
+        highau_ticlist = ['GC_Q1','GC_Q2','GC_Q3','GC_Q4','GC_Q5','GC_Q6','GC_Y2','GC_Y3'] 
+        avgho_ticlist = ['HO_Q1','HO_Q2','HO_Q3','HO_Q4','HO_Q5','HO_Q6','HO_Y2','HO_Y3']  
+        lowho_ticlist = ['HO_Q1','HO_Q2','HO_Q3','HO_Q4','HO_Q5','HO_Q6','HO_Y2','HO_Y3'] 
+        highho_ticlist = ['HO_Q1','HO_Q2','HO_Q3','HO_Q4','HO_Q5','HO_Q6','HO_Y2','HO_Y3']  
+        avgice_ticlist = ['CO_Q1','CO_Q2','CO_Q3','CO_Q4','CO_Q5','CO_Q6','CO_Y2','CO_Y3']  
+        lowice_ticlist = ['CO_Q1','CO_Q2','CO_Q3','CO_Q4','CO_Q5','CO_Q6','CO_Y2','CO_Y3'] 
+        highice_ticlist = ['CO_Q1','CO_Q2','CO_Q3','CO_Q4','CO_Q5','CO_Q6','CO_Y2','CO_Y3']   
+        avgfe_ticlist = ['IOE_Q1','IOE_Q2','IOE_Q3','IOE_Q4','IOE_Q5','IOE_Q6','IOE_Y2','IOE_Y3']  
+        lowfe_ticlist = ['IOE_Q1','IOE_Q2','IOE_Q3','IOE_Q4','IOE_Q5','IOE_Q6','IOE_Y2','IOE_Y3'] 
+        highfe_ticlist = ['IOE_Q1','IOE_Q2','IOE_Q3','IOE_Q4','IOE_Q5','IOE_Q6','IOE_Y2','IOE_Y3']  
+        avgpb_ticlist = ['LL_Q1','LL_Q2','LL_Q3','LL_Q4','LL_Q5','LL_Q6','LL_Y2','XO_Y3']  
+        lowpb_ticlist = ['LL_Q1','LL_Q2','LL_Q3','LL_Q4','LL_Q5','LL_Q6','LL_Y2','XO_Y3'] 
+        highpb_ticlist = ['LL_Q1','LL_Q2','LL_Q3','LL_Q4','LL_Q5','LL_Q6','LL_Y2','XO_Y3'] 
+        avgnbp_ticlist = ['FN_Q1','FN_Q2','FN_Q3','FN_Q4','FN_Q5','FN_Q6','FN_Y2','XO_Y3']  
+        lowrnbp_ticlist = ['FN_Q1','FN_Q2','FN_Q3','FN_Q4','FN_Q5','FN_Q6','FN_Y2','XO_Y3'] 
+        highnbp_ticlist = ['FN_Q1','FN_Q2','FN_Q3','FN_Q4','FN_Q5','FN_Q6','FN_Y2','XO_Y3'] 
+        avgni_ticlist = ['LN_Q1','LN_Q2','LN_Q3','LN_Q4','LN_Q5','LN_Q6','LN_Y2','LN_Y3']  
+        lowni_ticlist = ['LN_Q1','LN_Q2','LN_Q3','LN_Q4','LN_Q5','LN_Q6','LN_Y2','LN_Y3'] 
+        highni_ticlist = ['LN_Q1','LN_Q2','LN_Q3','LN_Q4','LN_Q5','LN_Q6','LN_Y2','LN_Y3'] 
+        avgpa_ticlist = ['PA_Q1','PA_Q2','PA_Q3','PA_Q4','PA_Q5','PA_Q6','PA_Y2','PA_Y3']  
+        lowpa_ticlist = ['PA_Q1','PA_Q2','PA_Q3','PA_Q4','PA_Q5','PA_Q6','PA_Y2','PA_Y3'] 
+        highpa_ticlist = ['PA_Q1','PA_Q2','PA_Q3','PA_Q4','PA_Q5','PA_Q6','PA_Y2','PA_Y3']
+        avgpt_ticlist = ['PL_Q1','PL_Q2','PL_Q3','PL_Q4','PL_Q5','PL_Q6','PL_Y2','PL_Y3']  
+        lowpt_ticlist = ['PL_Q1','PL_Q2','PL_Q3','PL_Q4','PL_Q5','PL_Q6','PL_Y2','PL_Y3'] 
+        highpt_ticlist = ['PL_Q1','PL_Q2','PL_Q3','PL_Q4','PL_Q5','PL_Q6','PL_Y2','PL_Y3']
+        avgrbob_ticlist = ['XB_Q1','XB_Q2','XB_Q3','XB_Q4','XB_Q5','XB_Q6','XB_Y2','XB_Y3']  
+        lowrbob_ticlist = ['XB_Q1','XB_Q2','XB_Q3','XB_Q4','XB_Q5','XB_Q6','XB_Y2','XB_Y3'] 
+        highrbob_ticlist = ['XB_Q1','XB_Q2','XB_Q3','XB_Q4','XB_Q5','XB_Q6','XB_Y2','XB_Y3']    
+        avgag_ticlist = ['SI_Q1','SI_Q2','SI_Q3','SI_Q4','SI_Q5','SI_Q6','SI_Y2','SI_Y3']  
+        lowag_ticlist = ['SI_Q1','SI_Q2','SI_Q3','SI_Q4','SI_Q5','SI_Q6','SI_Y2','SI_Y3'] 
+        highag_ticlist = ['SI_Q1','SI_Q2','SI_Q3','SI_Q4','SI_Q5','SI_Q6','SI_Y2','SI_Y3'] 
+        avgst_ticlist = ['HRC_Q1','HRC_Q2','HRC_Q3','HRC_Q4','HRC_Q5','HRC_Q6','HRC_Y2','HRC_Y3']  
+        lowst_ticlist = ['HRC_Q1','HRC_Q2','HRC_Q3','HRC_Q4','HRC_Q5','HRC_Q6','HRC_Y2','HRC_Y3'] 
+        highst_ticlist = ['HRC_Q1','HRC_Q2','HRC_Q3','HRC_Q4','HRC_Q5','HRC_Q6','HRC_Y2','HRC_Y3'] 
+        avgsb_ticlist = ['SB_Q1','SB_Q2','SB_Q3','SB_Q4','SB_Q5','SB_Q6','SB_Y2','SB_Y3']  
+        lowsb_ticlist = ['SB_Q1','SB_Q2','SB_Q3','SB_Q4','SB_Q5','SB_Q6','SB_Y2','SB_Y3'] 
+        highsb_ticlist = ['SB_Q1','SB_Q2','SB_Q3','SB_Q4','SB_Q5','SB_Q6','SB_Y2','SB_Y3']  
+        avgtn_ticlist = ['LT_Q1','LT_Q2','LT_Q3','LT_Q4','LT_Q5','LT_Q6','LT_Y2','LT_Y3']  
+        lowtn_ticlist = ['LT_Q1','LT_Q2','LT_Q3','LT_Q4','LT_Q5','LT_Q6','LT_Y2','LT_Y3'] 
+        hightn_ticlist = ['LT_Q1','LT_Q2','LT_Q3','LT_Q4','LT_Q5','LT_Q6','LT_Y2','LT_Y3']    
+        avgur_ticlist = ['UXA_Q1','UXA_Q2','UXA_Q3','UXA_Q4','UXA_Q5','UXA_Q6','UXA_Y2','UXA_Y3']  
+        lowur_ticlist = ['UXA_Q1','UXA_Q2','UXA_Q3','UXA_Q4','UXA_Q5','UXA_Q6','UXA_Y2','UXA_Y3'] 
+        highur_ticlist = ['UXA_Q1','UXA_Q2','UXA_Q3','UXA_Q4','UXA_Q5','UXA_Q6','UXA_Y2','UXA_Y3'] 
+        avgzn_ticlist = ['LX_Q1','LX_Q2','LX_Q3','LX_Q4','LX_Q5','LX_Q6','LX_Y2','LX_Y3']  
+        lowzn_ticlist = ['LX_Q1','LX_Q2','LX_Q3','LX_Q4','LX_Q5','LX_Q6','LX_Y2','LX_Y3'] 
+        highzn_ticlist = ['LX_Q1','LX_Q2','LX_Q3','LX_Q4','LX_Q5','LX_Q6','LX_Y2','LX_Y3']         
 #############################################################################################################################################################################
         #corresponding fieldnames to text lists
         ureagrancfr_fieldlist = ['FLAT_CFR_BRA_BID','CFR_INT_BRA_BID','CFR_INT_BRA_BID','CFR_INT_BRA_BID','CFR_INT_BRA_BID','FLAT_CFR_BRA_MID','FLAT_CFR_BRA',
@@ -805,6 +1165,152 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         imuanmix_fieldlist = ['AG-IMPORT_ACT'] * 40 
         imureatot_fieldlist = ['AG-IMPORT_ACT'] * 83
         imureadef_fieldlist = ['AG-IMPORT_ACT'] * 8
+        imureanesoi_fieldlist = ['AG-IMPORT_ACT'] * 35
+        imureasolid_fieldlist = ['AG-IMPORT_ACT'] * 34
+        imureaaq_fieldlist = ['AG-IMPORT_ACT'] * 68
+        exammtot_fieldlist = ['AG-EXPORT_ACT'] * 72
+        examman_fieldlist = ['AG-EXPORT_ACT'] * 62
+        exammnittot_fieldlist = ['AG-EXPORT_ACT'] * 44
+        exammnitaq_fieldlist = ['AG-EXPORT_ACT'] * 44
+        exammsu_fieldlist = ['AG-EXPORT_ACT'] * 90
+        exdap_fieldlist = ['AG-EXPORT_ACT'] * 76
+        exnpk_fieldlist = ['AG-EXPORT_ACT'] 
+        exmaptot_fieldlist = ['AG-EXPORT_ACT'] * 72
+        exmapmix_fieldlist = ['AG-EXPORT_ACT'] * 59
+        exphosac_fieldlist = ['AG-EXPORT_ACT'] * 12
+        expot_fieldlist = ['AG-EXPORT_ACT'] * 161
+        extsptot_fieldlist = ['AG-EXPORT_ACT'] * 37 
+        extspless_fieldlist = ['AG-EXPORT_ACT'] * 29
+        extspgreat_fieldlist = ['AG-EXPORT_ACT'] * 19
+        exuantot_fieldlist = ['AG-EXPORT_ACT'] * 34
+        exuanmix_fieldlist = ['AG-EXPORT_ACT'] * 34
+        exureatot_fieldlist = ['AG-EXPORT_ACT'] * 129
+        exureaaq_fieldlist = ['AG-EXPORT_ACT'] * 83
+        sdamm_fieldlist = ['FORC_CPC_BASE','FORC_CPC_BEAR','FORC_CPC_BULL','FORC_DMD_BASE','FORC_DMD_BEAR','FORC_DMD_BULL','FORC_UTL_BASE','FORC_UTL_BEAR','FORC_UTL_BULL']
+        sddapmapus_fieldlist = ['ALL_END-INVNTRY','ACT_END-INVNTRY','FORC_END-INVNTRY','ALL_PRODUCED','ACT_PRODUCED','FORC_PRODUCED']
+        sddapmapall_fieldlist = ['FORC_CPC_BASE','FORC_CPC_BEAR','FORC_CPC_BULL','FORC_DMD_BASE','FORC_DMD_BEAR','FORC_DMD_BULL','FORC_UTL_BASE','FORC_UTL_BEAR','FORC_UTL_BULL']
+        sdpotus_fieldlist = ['ALL_END-INVNTRY','ACT_END-INVNTRY','FORC_END-INVNTRY','ALL_PRODUCED','ACT_PRODUCED','FORC_PRODUCED']
+        sdpotall_fieldlist = ['FORC_CPC_BASE','FORC_CPC_BEAR','FORC_CPC_BULL','FORC_DMD_BASE','FORC_DMD_BEAR','FORC_DMD_BULL','FORC_UTL_BASE','FORC_UTL_BEAR','FORC_UTL_BULL']        
+        sduan_fieldlist = ['ALL_END-INVNTRY','ACT_END-INVNTRY','FORC_END-INVNTRY','ALL_PRODUCED','ACT_PRODUCED','FORC_PRODUCED']
+        sdureaus_fieldlist = ['ALL_END-INVNTRY','ACT_END-INVNTRY','FORC_END-INVNTRY','ALL_PRODUCED','ACT_PRODUCED','FORC_PRODUCED']
+        sdureaall_fieldlist = ['FORC_CPC_BASE','FORC_CPC_BEAR','FORC_CPC_BULL','FORC_DMD_BASE','FORC_DMD_BEAR','FORC_DMD_BULL','FORC_UTL_BASE','FORC_UTL_BEAR','FORC_UTL_BULL']      
+        dapbid_fieldlist = ['FERTILIZER-FRT_DRY_BID'] * 14
+        dapoffer_fieldlist = ['FERTILIZER-FRT_DRY_OFFER'] * 14
+        dapmid_fieldlist = ['FERTILIZER-FRT_DRY_MID'] * 14
+        mopbid_fieldlist = ['FERTILIZER-FRT_DRY_BID'] * 13
+        mopoffer_fieldlist = ['FERTILIZER-FRT_DRY_OFFER'] * 13
+        mopmid_fieldlist = ['FERTILIZER-FRT_DRY_MID'] * 13     
+        phorockbid_fieldlist = ['FERTILIZER-FRT_DRY_BID'] * 2
+        phorockoffer_fieldlist = ['FERTILIZER-FRT_DRY_OFFER'] * 2
+        phorockmid_fieldlist = ['FERTILIZER-FRT_DRY_MID'] * 2  
+        sulfurbid_fieldlist = ['FERTILIZER-FRT_DRY_BID'] * 7
+        sulfuroffer_fieldlist = ['FERTILIZER-FRT_DRY_OFFER'] * 7
+        sulfurmid_fieldlist = ['FERTILIZER-FRT_DRY_MID'] * 7 
+        ureabid_fieldlist = ['FERTILIZER-FRT_DRY_BID'] * 17
+        ureaoffer_fieldlist = ['FERTILIZER-FRT_DRY_OFFER'] * 17
+        ureamid_fieldlist = ['FERTILIZER-FRT_DRY_MID'] * 17   
+        ammbid_fieldlist = ['FERTILIZER-FRT_LQD_BID'] * 10
+        ammoffer_fieldlist = ['FERTILIZER-FRT_LQD_OFFER'] * 10
+        ammmid_fieldlist = ['FERTILIZER-FRT_LQD_MID'] * 10   
+        phoacbid_fieldlist = ['FERTILIZER-FRT_LQD_BID'] * 2
+        phoacoffer_fieldlist = ['FERTILIZER-FRT_LQD_OFFER'] * 2
+        phoacmid_fieldlist = ['FERTILIZER-FRT_LQD_MID'] * 2    
+        sulacbid_fieldlist = ['FERTILIZER-FRT_LQD_BID'] * 6
+        sulacoffer_fieldlist = ['FERTILIZER-FRT_LQD_OFFER'] * 6
+        sulacmid_fieldlist = ['FERTILIZER-FRT_LQD_MID'] * 6   
+        uanbid_fieldlist = ['FERTILIZER-FRT_LQD_BID'] * 2
+        uanoffer_fieldlist = ['FERTILIZER-FRT_LQD_OFFER'] * 2
+        uanmid_fieldlist = ['FERTILIZER-FRT_LQD_MID'] * 2  
+        chsdap_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13)    
+        chspot_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        chsuan_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        chsurea_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        buckdap_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13)    
+        buckpot_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        buckuan_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        buckurea_fieldlist = (['FOB_MWEST_PRICE']*13)+(['FOB_NOLA_PRICE']*13) 
+        cru_fieldlist = (['FOB_TAMPA_PRICE']*13)+(['FOB_NOLA_PRICE']*13)
+        avgcorn_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowcorn_fieldlist = ['CMD-FORC_LOW'] * 8
+        highcorn_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgsoy_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowsoy_fieldlist = ['CMD-FORC_LOW'] * 8
+        highsoy_fieldlist = ['CMD-FORC_HIGH'] * 8      
+        avgso_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowso_fieldlist = ['CMD-FORC_LOW'] * 8
+        highso_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgwheat_fieldlist = ['CMD-FORC_AVG'] * 8      
+        lowwheat_fieldlist = ['CMD-FORC_LOW'] * 8
+        highwheat_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgwti_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowwti_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highwti_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgng_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowng_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highng_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgcot_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowcot_fieldlist = ['CMD-FORC_LOW'] * 8
+        highcot_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgal_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowal_fieldlist = ['CMD-FORC_LOW'] * 8
+        highal_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgara_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowara_fieldlist = ['CMD-FORC_LOW'] * 8
+        highara_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgrb_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowrb_fieldlist = ['CMD-FORC_LOW'] * 8
+        highrb_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgcu_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowcu_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highcu_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgau_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowau_fieldlist = ['CMD-FORC_LOW'] * 8
+        highau_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgho_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowho_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highho_fieldlist = ['CMD-FORC_HIGH'] * 8      
+        avgice_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowice_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highice_fieldlist = ['CMD-FORC_HIGH'] * 8      
+        avgfe_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowfe_fieldlist = ['CMD-FORC_LOW'] * 8
+        highfe_fieldlist = ['CMD-FORC_HIGH'] * 8      
+        avgpb_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowpb_fieldlist = ['CMD-FORC_LOW'] * 8
+        highpb_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgnbp_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowrnbp_fieldlist = ['CMD-FORC_LOW'] * 8
+        highnbp_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgni_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowni_fieldlist = ['CMD-FORC_LOW'] * 8
+        highni_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgpa_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowpa_fieldlist = ['CMD-FORC_LOW'] * 8
+        highpa_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgpt_fieldlist = ['CMD-FORC_AVG'] * 8 
+        lowpt_fieldlist = ['CMD-FORC_LOW'] * 8
+        highpt_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgrbob_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowrbob_fieldlist = ['CMD-FORC_LOW'] * 8
+        highrbob_fieldlist = ['CMD-FORC_HIGH'] * 8      
+        avgag_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowag_fieldlist = ['CMD-FORC_LOW'] * 8
+        highag_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgst_fieldlist = ['CMD-FORC_AVG'] * 8   
+        lowst_fieldlist = ['CMD-FORC_LOW'] * 8
+        highst_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgsb_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowsb_fieldlist = ['CMD-FORC_LOW'] * 8
+        highsb_fieldlist = ['CMD-FORC_HIGH'] * 8     
+        avgtn_fieldlist = ['CMD-FORC_AVG'] * 8 
+        lowtn_fieldlist = ['CMD-FORC_LOW'] * 8 
+        hightn_fieldlist = ['CMD-FORC_HIGH'] * 8       
+        avgur_fieldlist = ['CMD-FORC_AVG'] * 8 
+        lowur_fieldlist = ['CMD-FORC_LOW'] * 8
+        highur_fieldlist = ['CMD-FORC_HIGH'] * 8    
+        avgzn_fieldlist = ['CMD-FORC_AVG'] * 8  
+        lowzn_fieldlist = ['CMD-FORC_LOW'] * 8 
+        highzn_fieldlist = ['CMD-FORC_HIGH'] * 8          
 #############################################################################################################################################################################
         #corresponding source to text lists
         ureagrancfr_sourcelist = ['ARGUS','FIS','FIS','FIS','FIS','ARGUS','CRU','FIS','FIS','FIS','FIS','ARGUS','FIS','FIS','FIS','FIS','CRU','CRU','CRU']                         
@@ -1009,9 +1515,74 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         imuanmix_sourcelist = ['USITC'] * 40
         imureatot_sourcelist = (['IFA']*10)+['USITC','IFA','IFA']+(['USITC']*70)
         imureadef_sourcelist = ['USITC'] * 8
+        imureanesoi_sourcelist = ['USITC'] * 35
+        imureasolid_sourcelist = ['USITC'] * 34
+        imureaaq_sourcelist = ['USITC'] * 68
+        exammtot_sourcelist = (['CUSTOMS']*10)+(['USITC']*62)
+        examman_sourcelist = ['USITC'] * 62
+        exammnittot_sourcelist = ['USITC'] * 44
+        exammnitaq_sourcelist = ['USITC'] * 44
+        exammsu_sourcelist = (['CUSTOMS']*22)+(['USITC']*68)
+        exdap_sourcelist = ['IFA','IFA','CHN-NCI']+(['IFA']*7)+(['USITC']*63)+(['IFA']*3)
+        exnpk_sourcelist = ['NAFD']
+        exmaptot_sourcelist = ['IFA','IFA','CHN-NCI']+(['IFA']*7)+(['USITC']*59)+(['IFA']*3)
+        exmapmix_sourcelist = ['USITC'] * 59
+        exphosac_sourcelist = ['IFA'] * 12
+        expot_sourcelist = ['IFA','IFA']+(['CUSTOMS']*65)+(['IFA']*8)+(['USITC']*84)+['IFA','IFA']
+        extsptot_sourcelist = ['CHN-NCI']+(['USITC']*36)
+        extspless_sourcelist = ['USITC'] * 29
+        extspgreat_sourcelist = ['USITC'] * 19
+        exuantot_sourcelist = ['USITC'] * 34
+        exuanmix_sourcelist = ['USITC'] * 34
+        exureatot_sourcelist = ['IFA','IFA'] + (['CUSTOMS']*33) + ['IFA','CHN-GAC']+(['IFA']*7)+(['USITC']*83)+['IFA','IFA']
+        exureaaq_sourcelist = ['USITC'] * 83
+        sdamm_sourcelist = ['GREEN-MARKETS'] * 9
+        sddapmapus_sourcelist = ['IFA'] * 6
+        sddapmapall_sourcelist = ['GREEN-MARKETS'] * 9
+        sdpotus_sourcelist = ['IFA'] * 6
+        sdpotall_sourcelist = ['GREEN-MARKETS'] * 9   
+        sduan_sourcelist = ['IFA'] * 6
+        sdureaus_sourcelist = ['IFA'] * 6
+        sdureaall_sourcelist = ['GREEN-MARKETS'] * 9 
+        dapbid_sourcelist = ['CRU'] * 14
+        dapoffer_sourcelist = ['CRU'] * 14
+        dapmid_sourcelist = ['CRU'] * 14
+        mopbid_sourcelist = ['CRU'] * 13
+        mopoffer_sourcelist = ['CRU'] * 13
+        mopmid_sourcelist = ['CRU'] * 13        
+        phorockbid_sourcelist = ['CRU'] * 2
+        phorockoffer_sourcelist = ['CRU'] * 2
+        phorockmid_sourcelist = ['CRU'] * 2  
+        sulfurbid_sourcelist = ['CRU'] * 7
+        sulfuroffer_sourcelist = ['CRU'] * 7
+        sulfurmid_sourcelist = ['CRU'] * 7  
+        ureabid_sourcelist = ['CRU'] * 17
+        ureaoffer_sourcelist = ['CRU'] * 17
+        ureamid_sourcelist = ['CRU'] * 17 
+        ammbid_sourcelist = ['CRU'] * 10
+        ammoffer_sourcelist = ['CRU'] * 10
+        ammmid_sourcelist = ['CRU'] * 10  
+        phoacbid_sourcelist = ['CRU'] * 2
+        phoacoffer_sourcelist = ['CRU'] * 2
+        phoacmid_sourcelist = ['CRU'] * 2  
+        sulacbid_sourcelist = ['CRU'] * 6
+        sulacoffer_sourcelist = ['CRU'] * 6
+        sulacmid_sourcelist = ['CRU'] * 6  
+        uanbid_sourcelist = ['CRU'] * 2
+        uanoffer_sourcelist = ['CRU'] * 2
+        uanmid_sourcelist = ['CRU'] * 2   
+        chsdap_sourcelist = ['CHS'] * 26
+        chspot_sourcelist = ['CHS'] * 26
+        chsuan_sourcelist = ['CHS'] * 26
+        chsurea_sourcelist = ['CHS'] * 26
+        buckdap_sourcelist = ['BUCKLEY'] * 26
+        buckpot_sourcelist = ['BUCKLEY'] * 26
+        buckuan_sourcelist = ['BUCKLEY'] * 26
+        buckurea_sourcelist = ['BUCKLEY'] * 26  
+        cru_sourcelist = ['CRU'] * 26
 #############################################################################################################################################################################
         #creating dictionaries so name and ticker, field, source go together
-        #print(len(immaptot_ticlist),len(immaptot_fieldlist),len(immaptot_sourcelist))
+        #print(len(exureaaq_list),len(exureaaq_ticlist),len(exureaaq_fieldlist),len(exureaaq_sourcelist))
         dictTickerureagrancfr = {}
         dictFieldureagrancfr = {}
         dictSourceureagrancfr = {}
@@ -2404,7 +2975,462 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         for i in range(0,len(imureadef_list)):
             dictTickerimureadef[imureadef_list[i]] = imureadef_ticlist[i]
             dictFieldimureadef[imureadef_list[i]] = imureadef_fieldlist[i]
-            dictSourceimureadef[imureadef_list[i]] = imureadef_sourcelist[i]              
+            dictSourceimureadef[imureadef_list[i]] = imureadef_sourcelist[i]   
+        dictTickerimureanesoi = {}
+        dictFieldimureanesoi = {}
+        dictSourceimureanesoi = {}
+        for i in range(0,len(imureanesoi_list)):
+            dictTickerimureanesoi[imureanesoi_list[i]] = imureanesoi_ticlist[i]
+            dictFieldimureanesoi[imureanesoi_list[i]] = imureanesoi_fieldlist[i]
+            dictSourceimureanesoi[imureanesoi_list[i]] = imureanesoi_sourcelist[i]   
+        dictTickerimureasolid = {}
+        dictFieldimureasolid = {}
+        dictSourceimureasolid = {}
+        for i in range(0,len(imureasolid_list)):
+            dictTickerimureasolid[imureasolid_list[i]] = imureasolid_ticlist[i]
+            dictFieldimureasolid[imureasolid_list[i]] = imureasolid_fieldlist[i]
+            dictSourceimureasolid[imureasolid_list[i]] = imureasolid_sourcelist[i]  
+        dictTickerimureaaq = {}
+        dictFieldimureaaq = {}
+        dictSourceimureaaq = {}
+        for i in range(0,len(imureaaq_list)):
+            dictTickerimureaaq[imureaaq_list[i]] = imureaaq_ticlist[i]
+            dictFieldimureaaq[imureaaq_list[i]] = imureaaq_fieldlist[i]
+            dictSourceimureaaq[imureaaq_list[i]] = imureaaq_sourcelist[i]  
+        dictTickerexammtot = {}
+        dictFieldexammtot = {}
+        dictSourceexammtot = {}
+        for i in range(0,len(exammtot_list)):
+            dictTickerexammtot[exammtot_list[i]] = exammtot_ticlist[i]
+            dictFieldexammtot[exammtot_list[i]] = exammtot_fieldlist[i]
+            dictSourceexammtot[exammtot_list[i]] = exammtot_sourcelist[i] 
+        dictTickerexamman = {}
+        dictFieldexamman = {}
+        dictSourceexamman = {}
+        for i in range(0,len(examman_list)):
+            dictTickerexamman[examman_list[i]] = examman_ticlist[i]
+            dictFieldexamman[examman_list[i]] = examman_fieldlist[i]
+            dictSourceexamman[examman_list[i]] = examman_sourcelist[i] 
+        dictTickerexammnittot = {}
+        dictFieldexammnittot = {}
+        dictSourceexammnittot = {}
+        for i in range(0,len(exammnittot_list)):
+            dictTickerexammnittot[exammnittot_list[i]] = exammnittot_ticlist[i]
+            dictFieldexammnittot[exammnittot_list[i]] = exammnittot_fieldlist[i]
+            dictSourceexammnittot[exammnittot_list[i]] = exammnittot_sourcelist[i]  
+        dictTickerexammnitaq = {}
+        dictFieldexammnitaq = {}
+        dictSourceexammnitaq = {}
+        for i in range(0,len(exammnitaq_list)):
+            dictTickerexammnitaq[exammnitaq_list[i]] = exammnitaq_ticlist[i]
+            dictFieldexammnitaq[exammnitaq_list[i]] = exammnitaq_fieldlist[i]
+            dictSourceexammnitaq[exammnitaq_list[i]] = exammnitaq_sourcelist[i]
+        dictTickerexammsu = {}
+        dictFieldexammsu = {}
+        dictSourceexammsu = {}
+        for i in range(0,len(exammsu_list)):
+            dictTickerexammsu[exammsu_list[i]] = exammsu_ticlist[i]
+            dictFieldexammsu[exammsu_list[i]] = exammsu_fieldlist[i]
+            dictSourceexammsu[exammsu_list[i]] = exammsu_sourcelist[i]    
+        dictTickerexdap = {}
+        dictFieldexdap = {}
+        dictSourceexdap = {}
+        for i in range(0,len(exdap_list)):
+            dictTickerexdap[exdap_list[i]] = exdap_ticlist[i]
+            dictFieldexdap[exdap_list[i]] = exdap_fieldlist[i]
+            dictSourceexdap[exdap_list[i]] = exdap_sourcelist[i]   
+        dictTickerexnpk = {}
+        dictFieldexnpk = {}
+        dictSourceexnpk = {}
+        for i in range(0,len(exnpk_list)):
+            dictTickerexnpk[exnpk_list[i]] = exnpk_ticlist[i]
+            dictFieldexnpk[exnpk_list[i]] = exnpk_fieldlist[i]
+            dictSourceexnpk[exnpk_list[i]] = exnpk_sourcelist[i]  
+        dictTickerexmaptot = {}
+        dictFieldexmaptot = {}
+        dictSourceexmaptot = {}
+        for i in range(0,len(exmaptot_list)):
+            dictTickerexmaptot[exmaptot_list[i]] = exmaptot_ticlist[i]
+            dictFieldexmaptot[exmaptot_list[i]] = exmaptot_fieldlist[i]
+            dictSourceexmaptot[exmaptot_list[i]] = exmaptot_sourcelist[i]  
+        dictTickerexmapmix = {}
+        dictFieldexmapmix = {}
+        dictSourceexmapmix = {}
+        for i in range(0,len(exmapmix_list)):
+            dictTickerexmapmix[exmapmix_list[i]] = exmapmix_ticlist[i]
+            dictFieldexmapmix[exmapmix_list[i]] = exmapmix_fieldlist[i]
+            dictSourceexmapmix[exmapmix_list[i]] = exmapmix_sourcelist[i]    
+        dictTickerexphosac = {}
+        dictFieldexphosac = {}
+        dictSourceexphosac = {}
+        for i in range(0,len(exphosac_list)):
+            dictTickerexphosac[exphosac_list[i]] = exphosac_ticlist[i]
+            dictFieldexphosac[exphosac_list[i]] = exphosac_fieldlist[i]
+            dictSourceexphosac[exphosac_list[i]] = exphosac_sourcelist[i]  
+        dictTickerexpot = {}
+        dictFieldexpot = {}
+        dictSourceexpot = {}
+        for i in range(0,len(expot_list)):
+            dictTickerexpot[expot_list[i]] = expot_ticlist[i]
+            dictFieldexpot[expot_list[i]] = expot_fieldlist[i]
+            dictSourceexpot[expot_list[i]] = expot_sourcelist[i]      
+        dictTickerextsptot = {}
+        dictFieldextsptot = {}
+        dictSourceextsptot = {}
+        for i in range(0,len(extsptot_list)):
+            dictTickerextsptot[extsptot_list[i]] = extsptot_ticlist[i]
+            dictFieldextsptot[extsptot_list[i]] = extsptot_fieldlist[i]
+            dictSourceextsptot[extsptot_list[i]] = extsptot_sourcelist[i]   
+        dictTickerextspless = {}
+        dictFieldextspless = {}
+        dictSourceextspless = {}
+        for i in range(0,len(extspless_list)):
+            dictTickerextspless[extspless_list[i]] = extspless_ticlist[i]
+            dictFieldextspless[extspless_list[i]] = extspless_fieldlist[i]
+            dictSourceextspless[extspless_list[i]] = extspless_sourcelist[i]  
+        dictTickerextspgreat = {}
+        dictFieldextspgreat = {}
+        dictSourceextspgreat = {}
+        for i in range(0,len(extspgreat_list)):
+            dictTickerextspgreat[extspgreat_list[i]] = extspgreat_ticlist[i]
+            dictFieldextspgreat[extspgreat_list[i]] = extspgreat_fieldlist[i]
+            dictSourceextspgreat[extspgreat_list[i]] = extspgreat_sourcelist[i]  
+        dictTickerexuantot = {}
+        dictFieldexuantot = {}
+        dictSourceexuantot = {}
+        for i in range(0,len(exuantot_list)):
+            dictTickerexuantot[exuantot_list[i]] = exuantot_ticlist[i]
+            dictFieldexuantot[exuantot_list[i]] = exuantot_fieldlist[i]
+            dictSourceexuantot[exuantot_list[i]] = exuantot_sourcelist[i]   
+        dictTickerexuanmix = {}
+        dictFieldexuanmix = {}
+        dictSourceexuanmix = {}
+        for i in range(0,len(exuanmix_list)):
+            dictTickerexuanmix[exuanmix_list[i]] = exuanmix_ticlist[i]
+            dictFieldexuanmix[exuanmix_list[i]] = exuanmix_fieldlist[i]
+            dictSourceexuanmix[exuanmix_list[i]] = exuanmix_sourcelist[i]   
+        dictTickerexureatot = {}
+        dictFieldexureatot = {}
+        dictSourceexureatot = {}
+        for i in range(0,len(exureatot_list)):
+            dictTickerexureatot[exureatot_list[i]] = exureatot_ticlist[i]
+            dictFieldexureatot[exureatot_list[i]] = exureatot_fieldlist[i]
+            dictSourceexureatot[exureatot_list[i]] = exureatot_sourcelist[i] 
+        dictTickerexureaaq = {}
+        dictFieldexureaaq = {}
+        dictSourceexureaaq = {}
+        for i in range(0,len(exureaaq_list)):
+            dictTickerexureaaq[exureaaq_list[i]] = exureaaq_ticlist[i]
+            dictFieldexureaaq[exureaaq_list[i]] = exureaaq_fieldlist[i]
+            dictSourceexureaaq[exureaaq_list[i]] = exureaaq_sourcelist[i]  
+        dictTickersdamm = {}
+        dictFieldsdamm = {}
+        dictSourcesdamm = {}
+        for i in range(0,len(sdamm_list)):
+            dictTickersdamm[sdamm_list[i]] = sdamm_ticlist[i]
+            dictFieldsdamm[sdamm_list[i]] = sdamm_fieldlist[i]
+            dictSourcesdamm[sdamm_list[i]] = sdamm_sourcelist[i]     
+        dictTickersddapmapus = {}
+        dictFieldsddapmapus = {}
+        dictSourcesddapmapus = {}
+        for i in range(0,len(sddapmapus_list)):
+            dictTickersddapmapus[sddapmapus_list[i]] = sddapmapus_ticlist[i]
+            dictFieldsddapmapus[sddapmapus_list[i]] = sddapmapus_fieldlist[i]
+            dictSourcesddapmapus[sddapmapus_list[i]] = sddapmapus_sourcelist[i] 
+        dictTickersddapmapall = {}
+        dictFieldsddapmapall = {}
+        dictSourcesddapmapall = {}
+        for i in range(0,len(sddapmapall_list)):
+            dictTickersddapmapall[sddapmapall_list[i]] = sddapmapall_ticlist[i]
+            dictFieldsddapmapall[sddapmapall_list[i]] = sddapmapall_fieldlist[i]
+            dictSourcesddapmapall[sddapmapall_list[i]] = sddapmapall_sourcelist[i]    
+        dictTickersdpotus = {}
+        dictFieldsdpotus = {}
+        dictSourcesdpotus = {}
+        for i in range(0,len(sdpotus_list)):
+            dictTickersdpotus[sdpotus_list[i]] = sdpotus_ticlist[i]
+            dictFieldsdpotus[sdpotus_list[i]] = sdpotus_fieldlist[i]
+            dictSourcesdpotus[sdpotus_list[i]] = sdpotus_sourcelist[i] 
+        dictTickersdpotall = {}
+        dictFieldsdpotall = {}
+        dictSourcesdpotall = {}
+        for i in range(0,len(sdpotall_list)):
+            dictTickersdpotall[sdpotall_list[i]] = sdpotall_ticlist[i]
+            dictFieldsdpotall[sdpotall_list[i]] = sdpotall_fieldlist[i]
+            dictSourcesdpotall[sdpotall_list[i]] = sdpotall_sourcelist[i]      
+        dictTickersduan = {}
+        dictFieldsduan = {}
+        dictSourcesduan = {}
+        for i in range(0,len(sduan_list)):
+            dictTickersduan[sduan_list[i]] = sduan_ticlist[i]
+            dictFieldsduan[sduan_list[i]] = sduan_fieldlist[i]
+            dictSourcesduan[sduan_list[i]] = sduan_sourcelist[i]
+        dictTickersdureaus = {}
+        dictFieldsdureaus = {}
+        dictSourcesdureaus = {}
+        for i in range(0,len(sdureaus_list)):
+            dictTickersdureaus[sdureaus_list[i]] = sdureaus_ticlist[i]
+            dictFieldsdureaus[sdureaus_list[i]] = sdureaus_fieldlist[i]
+            dictSourcesdureaus[sdureaus_list[i]] = sdureaus_sourcelist[i] 
+        dictTickersdureaall = {}
+        dictFieldsdureaall = {}
+        dictSourcesdureaall = {}
+        for i in range(0,len(sdureaall_list)):
+            dictTickersdureaall[sdureaall_list[i]] = sdureaall_ticlist[i]
+            dictFieldsdureaall[sdureaall_list[i]] = sdureaall_fieldlist[i]
+            dictSourcesdureaall[sdureaall_list[i]] = sdureaall_sourcelist[i]    
+        dictTickerdapbid = {}
+        dictFielddapbid = {}
+        dictSourcedapbid = {}
+        for i in range(0,len(dapbid_list)):
+            dictTickerdapbid[dapbid_list[i]] = dapbid_ticlist[i]
+            dictFielddapbid[dapbid_list[i]] = dapbid_fieldlist[i]
+            dictSourcedapbid[dapbid_list[i]] = dapbid_sourcelist[i]   
+        dictTickerdapoffer = {}
+        dictFielddapoffer = {}
+        dictSourcedapoffer = {}
+        for i in range(0,len(dapoffer_list)):
+            dictTickerdapoffer[dapoffer_list[i]] = dapoffer_ticlist[i]
+            dictFielddapoffer[dapoffer_list[i]] = dapoffer_fieldlist[i]
+            dictSourcedapoffer[dapoffer_list[i]] = dapoffer_sourcelist[i]
+        dictTickerdapmid = {}
+        dictFielddapmid = {}
+        dictSourcedapmid = {}
+        for i in range(0,len(dapmid_list)):
+            dictTickerdapmid[dapmid_list[i]] = dapmid_ticlist[i]
+            dictFielddapmid[dapmid_list[i]] = dapmid_fieldlist[i]
+            dictSourcedapmid[dapmid_list[i]] = dapmid_sourcelist[i]  
+        dictTickermopbid = {}
+        dictFieldmopbid = {}
+        dictSourcemopbid = {}
+        for i in range(0,len(mopbid_list)):
+            dictTickermopbid[mopbid_list[i]] = mopbid_ticlist[i]
+            dictFieldmopbid[mopbid_list[i]] = mopbid_fieldlist[i]
+            dictSourcemopbid[mopbid_list[i]] = mopbid_sourcelist[i]   
+        dictTickermopoffer = {}
+        dictFieldmopoffer = {}
+        dictSourcemopoffer = {}
+        for i in range(0,len(mopoffer_list)):
+            dictTickermopoffer[mopoffer_list[i]] = mopoffer_ticlist[i]
+            dictFieldmopoffer[mopoffer_list[i]] = mopoffer_fieldlist[i]
+            dictSourcemopoffer[mopoffer_list[i]] = mopoffer_sourcelist[i]
+        dictTickermopmid = {}
+        dictFieldmopmid = {}
+        dictSourcemopmid = {}
+        for i in range(0,len(mopmid_list)):
+            dictTickermopmid[mopmid_list[i]] = mopmid_ticlist[i]
+            dictFieldmopmid[mopmid_list[i]] = mopmid_fieldlist[i]
+            dictSourcemopmid[mopmid_list[i]] = mopmid_sourcelist[i]   
+        dictTickerphorockbid = {}
+        dictFieldphorockbid = {}
+        dictSourcephorockbid = {}
+        for i in range(0,len(phorockbid_list)):
+            dictTickerphorockbid[phorockbid_list[i]] = phorockbid_ticlist[i]
+            dictFieldphorockbid[phorockbid_list[i]] = phorockbid_fieldlist[i]
+            dictSourcephorockbid[phorockbid_list[i]] = phorockbid_sourcelist[i]   
+        dictTickerphorockoffer = {}
+        dictFieldphorockoffer = {}
+        dictSourcephorockoffer = {}
+        for i in range(0,len(phorockoffer_list)):
+            dictTickerphorockoffer[phorockoffer_list[i]] = phorockoffer_ticlist[i]
+            dictFieldphorockoffer[phorockoffer_list[i]] = phorockoffer_fieldlist[i]
+            dictSourcephorockoffer[phorockoffer_list[i]] = phorockoffer_sourcelist[i]
+        dictTickerphorockmid = {}
+        dictFieldphorockmid = {}
+        dictSourcephorockmid = {}
+        for i in range(0,len(phorockmid_list)):
+            dictTickerphorockmid[phorockmid_list[i]] = phorockmid_ticlist[i]
+            dictFieldphorockmid[phorockmid_list[i]] = phorockmid_fieldlist[i]
+            dictSourcephorockmid[phorockmid_list[i]] = phorockmid_sourcelist[i]   
+        dictTickersulfurbid = {}
+        dictFieldsulfurbid = {}
+        dictSourcesulfurbid = {}
+        for i in range(0,len(sulfurbid_list)):
+            dictTickersulfurbid[sulfurbid_list[i]] = sulfurbid_ticlist[i]
+            dictFieldsulfurbid[sulfurbid_list[i]] = sulfurbid_fieldlist[i]
+            dictSourcesulfurbid[sulfurbid_list[i]] = sulfurbid_sourcelist[i]   
+        dictTickersulfuroffer = {}
+        dictFieldsulfuroffer = {}
+        dictSourcesulfuroffer = {}
+        for i in range(0,len(sulfuroffer_list)):
+            dictTickersulfuroffer[sulfuroffer_list[i]] = sulfuroffer_ticlist[i]
+            dictFieldsulfuroffer[sulfuroffer_list[i]] = sulfuroffer_fieldlist[i]
+            dictSourcesulfuroffer[sulfuroffer_list[i]] = sulfuroffer_sourcelist[i]
+        dictTickersulfurmid = {}
+        dictFieldsulfurmid = {}
+        dictSourcesulfurmid = {}
+        for i in range(0,len(sulfurmid_list)):
+            dictTickersulfurmid[sulfurmid_list[i]] = sulfurmid_ticlist[i]
+            dictFieldsulfurmid[sulfurmid_list[i]] = sulfurmid_fieldlist[i]
+            dictSourcesulfurmid[sulfurmid_list[i]] = sulfurmid_sourcelist[i] 
+        dictTickerureabid = {}
+        dictFieldureabid = {}
+        dictSourceureabid = {}
+        for i in range(0,len(ureabid_list)):
+            dictTickerureabid[ureabid_list[i]] = ureabid_ticlist[i]
+            dictFieldureabid[ureabid_list[i]] = ureabid_fieldlist[i]
+            dictSourceureabid[ureabid_list[i]] = ureabid_sourcelist[i]   
+        dictTickerureaoffer = {}
+        dictFieldureaoffer = {}
+        dictSourceureaoffer = {}
+        for i in range(0,len(ureaoffer_list)):
+            dictTickerureaoffer[ureaoffer_list[i]] = ureaoffer_ticlist[i]
+            dictFieldureaoffer[ureaoffer_list[i]] = ureaoffer_fieldlist[i]
+            dictSourceureaoffer[ureaoffer_list[i]] = ureaoffer_sourcelist[i]
+        dictTickerureamid = {}
+        dictFieldureamid = {}
+        dictSourceureamid = {}
+        for i in range(0,len(ureamid_list)):
+            dictTickerureamid[ureamid_list[i]] = ureamid_ticlist[i]
+            dictFieldureamid[ureamid_list[i]] = ureamid_fieldlist[i]
+            dictSourceureamid[ureamid_list[i]] = ureamid_sourcelist[i]  
+        dictTickerammbid = {}
+        dictFieldammbid = {}
+        dictSourceammbid = {}
+        for i in range(0,len(ammbid_list)):
+            dictTickerammbid[ammbid_list[i]] = ammbid_ticlist[i]
+            dictFieldammbid[ammbid_list[i]] = ammbid_fieldlist[i]
+            dictSourceammbid[ammbid_list[i]] = ammbid_sourcelist[i]   
+        dictTickerammoffer = {}
+        dictFieldammoffer = {}
+        dictSourceammoffer = {}
+        for i in range(0,len(ammoffer_list)):
+            dictTickerammoffer[ammoffer_list[i]] = ammoffer_ticlist[i]
+            dictFieldammoffer[ammoffer_list[i]] = ammoffer_fieldlist[i]
+            dictSourceammoffer[ammoffer_list[i]] = ammoffer_sourcelist[i]
+        dictTickerammmid = {}
+        dictFieldammmid = {}
+        dictSourceammmid = {}
+        for i in range(0,len(ammmid_list)):
+            dictTickerammmid[ammmid_list[i]] = ammmid_ticlist[i]
+            dictFieldammmid[ammmid_list[i]] = ammmid_fieldlist[i]
+            dictSourceammmid[ammmid_list[i]] = ammmid_sourcelist[i]   
+        dictTickerphoacbid = {}
+        dictFieldphoacbid = {}
+        dictSourcephoacbid = {}
+        for i in range(0,len(phoacbid_list)):
+            dictTickerphoacbid[phoacbid_list[i]] = phoacbid_ticlist[i]
+            dictFieldphoacbid[phoacbid_list[i]] = phoacbid_fieldlist[i]
+            dictSourcephoacbid[phoacbid_list[i]] = phoacbid_sourcelist[i]   
+        dictTickerphoacoffer = {}
+        dictFieldphoacoffer = {}
+        dictSourcephoacoffer = {}
+        for i in range(0,len(phoacoffer_list)):
+            dictTickerphoacoffer[phoacoffer_list[i]] = phoacoffer_ticlist[i]
+            dictFieldphoacoffer[phoacoffer_list[i]] = phoacoffer_fieldlist[i]
+            dictSourcephoacoffer[phoacoffer_list[i]] = phoacoffer_sourcelist[i]
+        dictTickerphoacmid = {}
+        dictFieldphoacmid = {}
+        dictSourcephoacmid = {}
+        for i in range(0,len(phoacmid_list)):
+            dictTickerphoacmid[phoacmid_list[i]] = phoacmid_ticlist[i]
+            dictFieldphoacmid[phoacmid_list[i]] = phoacmid_fieldlist[i]
+            dictSourcephoacmid[phoacmid_list[i]] = phoacmid_sourcelist[i] 
+        dictTickersulacbid = {}
+        dictFieldsulacbid = {}
+        dictSourcesulacbid = {}
+        for i in range(0,len(sulacbid_list)):
+            dictTickersulacbid[sulacbid_list[i]] = sulacbid_ticlist[i]
+            dictFieldsulacbid[sulacbid_list[i]] = sulacbid_fieldlist[i]
+            dictSourcesulacbid[sulacbid_list[i]] = sulacbid_sourcelist[i]   
+        dictTickersulacoffer = {}
+        dictFieldsulacoffer = {}
+        dictSourcesulacoffer = {}
+        for i in range(0,len(sulacoffer_list)):
+            dictTickersulacoffer[sulacoffer_list[i]] = sulacoffer_ticlist[i]
+            dictFieldsulacoffer[sulacoffer_list[i]] = sulacoffer_fieldlist[i]
+            dictSourcesulacoffer[sulacoffer_list[i]] = sulacoffer_sourcelist[i]
+        dictTickersulacmid = {}
+        dictFieldsulacmid = {}
+        dictSourcesulacmid = {}
+        for i in range(0,len(sulacmid_list)):
+            dictTickersulacmid[sulacmid_list[i]] = sulacmid_ticlist[i]
+            dictFieldsulacmid[sulacmid_list[i]] = sulacmid_fieldlist[i]
+            dictSourcesulacmid[sulacmid_list[i]] = sulacmid_sourcelist[i]  
+        dictTickeruanbid = {}
+        dictFielduanbid = {}
+        dictSourceuanbid = {}
+        for i in range(0,len(uanbid_list)):
+            dictTickeruanbid[uanbid_list[i]] = uanbid_ticlist[i]
+            dictFielduanbid[uanbid_list[i]] = uanbid_fieldlist[i]
+            dictSourceuanbid[uanbid_list[i]] = uanbid_sourcelist[i]   
+        dictTickeruanoffer = {}
+        dictFielduanoffer = {}
+        dictSourceuanoffer = {}
+        for i in range(0,len(uanoffer_list)):
+            dictTickeruanoffer[uanoffer_list[i]] = uanoffer_ticlist[i]
+            dictFielduanoffer[uanoffer_list[i]] = uanoffer_fieldlist[i]
+            dictSourceuanoffer[uanoffer_list[i]] = uanoffer_sourcelist[i]
+        dictTickeruanmid = {}
+        dictFielduanmid = {}
+        dictSourceuanmid = {}
+        for i in range(0,len(uanmid_list)):
+            dictTickeruanmid[uanmid_list[i]] = uanmid_ticlist[i]
+            dictFielduanmid[uanmid_list[i]] = uanmid_fieldlist[i]
+            dictSourceuanmid[uanmid_list[i]] = uanmid_sourcelist[i]  
+        dictTickerchsdap = {}
+        dictFieldchsdap = {}
+        dictSourcechsdap = {}
+        for i in range(0,len(chsdap_list)):
+            dictTickerchsdap[chsdap_list[i]] = chsdap_ticlist[i]
+            dictFieldchsdap[chsdap_list[i]] = chsdap_fieldlist[i]
+            dictSourcechsdap[chsdap_list[i]] = chsdap_sourcelist[i]    
+        dictTickerchspot = {}
+        dictFieldchspot = {}
+        dictSourcechspot = {}
+        for i in range(0,len(chspot_list)):
+            dictTickerchspot[chspot_list[i]] = chspot_ticlist[i]
+            dictFieldchspot[chspot_list[i]] = chspot_fieldlist[i]
+            dictSourcechspot[chspot_list[i]] = chspot_sourcelist[i] 
+        dictTickerchsuan = {}
+        dictFieldchsuan = {}
+        dictSourcechsuan = {}
+        for i in range(0,len(chsuan_list)):
+            dictTickerchsuan[chsuan_list[i]] = chsuan_ticlist[i]
+            dictFieldchsuan[chsuan_list[i]] = chsuan_fieldlist[i]
+            dictSourcechsuan[chsuan_list[i]] = chsuan_sourcelist[i] 
+        dictTickerchsurea = {}
+        dictFieldchsurea = {}
+        dictSourcechsurea = {}
+        for i in range(0,len(chsurea_list)):
+            dictTickerchsurea[chsurea_list[i]] = chsurea_ticlist[i]
+            dictFieldchsurea[chsurea_list[i]] = chsurea_fieldlist[i]
+            dictSourcechsurea[chsurea_list[i]] = chsurea_sourcelist[i]           
+        dictTickerbuckdap = {}
+        dictFieldbuckdap = {}
+        dictSourcebuckdap = {}
+        for i in range(0,len(buckdap_list)):
+            dictTickerbuckdap[buckdap_list[i]] = buckdap_ticlist[i]
+            dictFieldbuckdap[buckdap_list[i]] = buckdap_fieldlist[i]
+            dictSourcebuckdap[buckdap_list[i]] = buckdap_sourcelist[i]    
+        dictTickerbuckpot = {}
+        dictFieldbuckpot = {}
+        dictSourcebuckpot = {}
+        for i in range(0,len(buckpot_list)):
+            dictTickerbuckpot[buckpot_list[i]] = buckpot_ticlist[i]
+            dictFieldbuckpot[buckpot_list[i]] = buckpot_fieldlist[i]
+            dictSourcebuckpot[buckpot_list[i]] = buckpot_sourcelist[i] 
+        dictTickerbuckuan = {}
+        dictFieldbuckuan = {}
+        dictSourcebuckuan = {}
+        for i in range(0,len(buckuan_list)):
+            dictTickerbuckuan[buckuan_list[i]] = buckuan_ticlist[i]
+            dictFieldbuckuan[buckuan_list[i]] = buckuan_fieldlist[i]
+            dictSourcebuckuan[buckuan_list[i]] = buckuan_sourcelist[i] 
+        dictTickerbuckurea = {}
+        dictFieldbuckurea = {}
+        dictSourcebuckurea = {}
+        for i in range(0,len(buckurea_list)):
+            dictTickerbuckurea[buckurea_list[i]] = buckurea_ticlist[i]
+            dictFieldbuckurea[buckurea_list[i]] = buckurea_fieldlist[i]
+            dictSourcebuckurea[buckurea_list[i]] = buckurea_sourcelist[i]  
+        dictTickercru = {}
+        dictFieldcru = {}
+        dictSourcecru = {}
+        for i in range(0,len(cru_list)):
+            dictTickercru[cru_list[i]] = cru_ticlist[i]
+            dictFieldcru[cru_list[i]] = cru_fieldlist[i]
+            dictSourcecru[cru_list[i]] = cru_sourcelist[i]                    
 ##############################################################################################################################################################################
         #selected items from lists x variables
         ureagrancfr = (self.ureagrancfr_listWidget.selectedItems()) #selected items
@@ -3206,7 +4232,267 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         imureadef = (self.imureadef_listWidget.selectedItems()) 
         list_imureadef = [] 
         for i in list(imureadef):
-            list_imureadef.append(str(i.text()))              
+            list_imureadef.append(str(i.text()))     
+        imureanesoi = (self.imureanesoi_listWidget.selectedItems()) 
+        list_imureanesoi = [] 
+        for i in list(imureanesoi):
+            list_imureanesoi.append(str(i.text()))     
+        imureasolid = (self.imureasolid_listWidget.selectedItems()) 
+        list_imureasolid = [] 
+        for i in list(imureasolid):
+            list_imureasolid.append(str(i.text()))     
+        imureaaq = (self.imureaaq_listWidget.selectedItems()) 
+        list_imureaaq = [] 
+        for i in list(imureaaq):
+            list_imureaaq.append(str(i.text()))  
+        exammtot = (self.exammtot_listWidget.selectedItems()) 
+        list_exammtot = [] 
+        for i in list(exammtot):
+            list_exammtot.append(str(i.text()))  
+        examman = (self.examman_listWidget.selectedItems()) 
+        list_examman = [] 
+        for i in list(examman):
+            list_examman.append(str(i.text())) 
+        exammnittot = (self.exammnittot_listWidget.selectedItems()) 
+        list_exammnittot = [] 
+        for i in list(exammnittot):
+            list_exammnittot.append(str(i.text()))  
+        exammnitaq = (self.exammnitaq_listWidget.selectedItems()) 
+        list_exammnitaq = [] 
+        for i in list(exammnitaq):
+            list_exammnitaq.append(str(i.text()))      
+        exammsu = (self.exammsu_listWidget.selectedItems()) 
+        list_exammsu = [] 
+        for i in list(exammsu):
+            list_exammsu.append(str(i.text()))     
+        exdap = (self.exdap_listWidget.selectedItems()) 
+        list_exdap = [] 
+        for i in list(exdap):
+            list_exdap.append(str(i.text()))     
+        exnpk = (self.exnpk_listWidget.selectedItems()) 
+        list_exnpk = [] 
+        for i in list(exnpk):
+            list_exnpk.append(str(i.text()))     
+        exmaptot = (self.exmaptot_listWidget.selectedItems()) 
+        list_exmaptot = [] 
+        for i in list(exmaptot):
+            list_exmaptot.append(str(i.text()))    
+        exmapmix = (self.exmapmix_listWidget.selectedItems()) 
+        list_exmapmix = [] 
+        for i in list(exmapmix):
+            list_exmapmix.append(str(i.text()))         
+        exphosac = (self.exphosac_listWidget.selectedItems()) 
+        list_exphosac = [] 
+        for i in list(exphosac):
+            list_exphosac.append(str(i.text()))   
+        expot = (self.expot_listWidget.selectedItems()) 
+        list_expot = [] 
+        for i in list(expot):
+            list_expot.append(str(i.text()))     
+        extsptot = (self.extsptot_listWidget.selectedItems()) 
+        list_extsptot = [] 
+        for i in list(extsptot):
+            list_extsptot.append(str(i.text()))          
+        extspless = (self.extspless_listWidget.selectedItems()) 
+        list_extspless = [] 
+        for i in list(extspless):
+            list_extspless.append(str(i.text())) 
+        extspgreat = (self.extspgreat_listWidget.selectedItems()) 
+        list_extspgreat = [] 
+        for i in list(extspgreat):
+            list_extspgreat.append(str(i.text()))     
+        exuantot = (self.exuantot_listWidget.selectedItems()) 
+        list_exuantot = [] 
+        for i in list(exuantot):
+            list_exuantot.append(str(i.text())) 
+        exuanmix = (self.exuanmix_listWidget.selectedItems()) 
+        list_exuanmix = [] 
+        for i in list(exuanmix):
+            list_exuanmix.append(str(i.text()))      
+        exureatot = (self.exureatot_listWidget.selectedItems()) 
+        list_exureatot = [] 
+        for i in list(exureatot):
+            list_exureatot.append(str(i.text()))     
+        exureaaq = (self.exureaaq_listWidget.selectedItems()) 
+        list_exureaaq = [] 
+        for i in list(exureaaq):
+            list_exureaaq.append(str(i.text()))    
+        sdamm = (self.sdamm_listWidget.selectedItems()) 
+        list_sdamm = [] 
+        for i in list(sdamm):
+            list_sdamm.append(str(i.text()))    
+        sddapmapus = (self.sddapmapus_listWidget.selectedItems()) 
+        list_sddapmapus = [] 
+        for i in list(sddapmapus):
+            list_sddapmapus.append(str(i.text()))    
+        sddapmapall = (self.sddapmapall_listWidget.selectedItems()) 
+        list_sddapmapall = [] 
+        for i in list(sddapmapall):
+            list_sddapmapall.append(str(i.text()))   
+        sdpotus = (self.sdpotus_listWidget.selectedItems()) 
+        list_sdpotus = [] 
+        for i in list(sdpotus):
+            list_sdpotus.append(str(i.text()))    
+        sdpotall = (self.sdpotall_listWidget.selectedItems()) 
+        list_sdpotall = [] 
+        for i in list(sdpotall):
+            list_sdpotall.append(str(i.text()))   
+        sduan = (self.sduan_listWidget.selectedItems()) 
+        list_sduan = [] 
+        for i in list(sduan):
+            list_sduan.append(str(i.text()))     
+        sdureaus = (self.sdureaus_listWidget.selectedItems()) 
+        list_sdureaus = [] 
+        for i in list(sdureaus):
+            list_sdureaus.append(str(i.text()))    
+        sdureaall = (self.sdureaall_listWidget.selectedItems()) 
+        list_sdureaall = [] 
+        for i in list(sdureaall):
+            list_sdureaall.append(str(i.text()))  
+        dapbid = (self.dapbid_listWidget.selectedItems()) 
+        list_dapbid = [] 
+        for i in list(dapbid):
+            list_dapbid.append(str(i.text()))  
+        dapoffer = (self.dapoffer_listWidget.selectedItems()) 
+        list_dapoffer = [] 
+        for i in list(dapoffer):
+            list_dapoffer.append(str(i.text())) 
+        dapmid = (self.dapmid_listWidget.selectedItems()) 
+        list_dapmid = [] 
+        for i in list(dapmid):
+            list_dapmid.append(str(i.text()))   
+        mopbid = (self.mopbid_listWidget.selectedItems()) 
+        list_mopbid = [] 
+        for i in list(mopbid):
+            list_mopbid.append(str(i.text()))  
+        mopoffer = (self.mopoffer_listWidget.selectedItems()) 
+        list_mopoffer = [] 
+        for i in list(mopoffer):
+            list_mopoffer.append(str(i.text())) 
+        mopmid = (self.mopmid_listWidget.selectedItems()) 
+        list_mopmid = [] 
+        for i in list(mopmid):
+            list_mopmid.append(str(i.text()))  
+        phorockbid = (self.phorockbid_listWidget.selectedItems()) 
+        list_phorockbid = [] 
+        for i in list(phorockbid):
+            list_phorockbid.append(str(i.text()))  
+        phorockoffer = (self.phorockoffer_listWidget.selectedItems()) 
+        list_phorockoffer = [] 
+        for i in list(phorockoffer):
+            list_phorockoffer.append(str(i.text())) 
+        phorockmid = (self.phorockmid_listWidget.selectedItems()) 
+        list_phorockmid = [] 
+        for i in list(phorockmid):
+            list_phorockmid.append(str(i.text()))    
+        sulfurbid = (self.sulfurbid_listWidget.selectedItems()) 
+        list_sulfurbid = [] 
+        for i in list(sulfurbid):
+            list_sulfurbid.append(str(i.text()))  
+        sulfuroffer = (self.sulfuroffer_listWidget.selectedItems()) 
+        list_sulfuroffer = [] 
+        for i in list(sulfuroffer):
+            list_sulfuroffer.append(str(i.text())) 
+        sulfurmid = (self.sulfurmid_listWidget.selectedItems()) 
+        list_sulfurmid = [] 
+        for i in list(sulfurmid):
+            list_sulfurmid.append(str(i.text()))      
+        ureabid = (self.ureabid_listWidget.selectedItems()) 
+        list_ureabid = [] 
+        for i in list(ureabid):
+            list_ureabid.append(str(i.text()))  
+        ureaoffer = (self.ureaoffer_listWidget.selectedItems()) 
+        list_ureaoffer = [] 
+        for i in list(ureaoffer):
+            list_ureaoffer.append(str(i.text())) 
+        ureamid = (self.ureamid_listWidget.selectedItems()) 
+        list_ureamid = [] 
+        for i in list(ureamid):
+            list_ureamid.append(str(i.text()))  
+        ammbid = (self.ammbid_listWidget.selectedItems()) 
+        list_ammbid = [] 
+        for i in list(ammbid):
+            list_ammbid.append(str(i.text()))  
+        ammoffer = (self.ammoffer_listWidget.selectedItems()) 
+        list_ammoffer = [] 
+        for i in list(ammoffer):
+            list_ammoffer.append(str(i.text())) 
+        ammmid = (self.ammmid_listWidget.selectedItems()) 
+        list_ammmid = [] 
+        for i in list(ammmid):
+            list_ammmid.append(str(i.text()))  
+        phoacbid = (self.phoacbid_listWidget.selectedItems()) 
+        list_phoacbid = [] 
+        for i in list(phoacbid):
+            list_phoacbid.append(str(i.text()))  
+        phoacoffer = (self.phoacoffer_listWidget.selectedItems()) 
+        list_phoacoffer = [] 
+        for i in list(phoacoffer):
+            list_phoacoffer.append(str(i.text())) 
+        phoacmid = (self.phoacmid_listWidget.selectedItems()) 
+        list_phoacmid = [] 
+        for i in list(phoacmid):
+            list_phoacmid.append(str(i.text()))    
+        sulacbid = (self.sulacbid_listWidget.selectedItems()) 
+        list_sulacbid = [] 
+        for i in list(sulacbid):
+            list_sulacbid.append(str(i.text()))  
+        sulacoffer = (self.sulacoffer_listWidget.selectedItems()) 
+        list_sulacoffer = [] 
+        for i in list(sulacoffer):
+            list_sulacoffer.append(str(i.text())) 
+        sulacmid = (self.sulacmid_listWidget.selectedItems()) 
+        list_sulacmid = [] 
+        for i in list(sulacmid):
+            list_sulacmid.append(str(i.text()))    
+        uanbid = (self.uanbid_listWidget.selectedItems()) 
+        list_uanbid = [] 
+        for i in list(uanbid):
+            list_uanbid.append(str(i.text()))  
+        uanoffer = (self.uanoffer_listWidget.selectedItems()) 
+        list_uanoffer = [] 
+        for i in list(uanoffer):
+            list_uanoffer.append(str(i.text())) 
+        uanmid = (self.uanmid_listWidget.selectedItems()) 
+        list_uanmid = [] 
+        for i in list(uanmid):
+            list_uanmid.append(str(i.text()))     
+        chsdap = (self.chsdap_listWidget.selectedItems()) 
+        list_chsdap = [] 
+        for i in list(chsdap):
+            list_chsdap.append(str(i.text()))         
+        chspot = (self.chspot_listWidget.selectedItems()) 
+        list_chspot = [] 
+        for i in list(chspot):
+            list_chspot.append(str(i.text()))   
+        chsuan = (self.chsuan_listWidget.selectedItems()) 
+        list_chsuan = [] 
+        for i in list(chsuan):
+            list_chsuan.append(str(i.text()))   
+        chsurea = (self.chsurea_listWidget.selectedItems()) 
+        list_chsurea = [] 
+        for i in list(chsurea):
+            list_chsurea.append(str(i.text()))      
+        buckdap = (self.buckdap_listWidget.selectedItems()) 
+        list_buckdap = [] 
+        for i in list(buckdap):
+            list_buckdap.append(str(i.text()))         
+        buckpot = (self.buckpot_listWidget.selectedItems()) 
+        list_buckpot = [] 
+        for i in list(buckpot):
+            list_buckpot.append(str(i.text()))   
+        buckuan = (self.buckuan_listWidget.selectedItems()) 
+        list_buckuan = [] 
+        for i in list(buckuan):
+            list_buckuan.append(str(i.text()))   
+        buckurea = (self.buckurea_listWidget.selectedItems()) 
+        list_buckurea = [] 
+        for i in list(buckurea):
+            list_buckurea.append(str(i.text()))   
+        cru = (self.cru_listWidget.selectedItems()) 
+        list_cru = [] 
+        for i in list(cru):
+            list_cru.append(str(i.text()))             
 ############################################################################################################################################################################
         ureagrancfrfinal_ticker = []
         ureagrancfrfinal_field = []
@@ -4600,7 +5886,462 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         for i in (list_imureadef):
             imureadeffinal_ticker.append(dictTickerimureadef.get(i))
             imureadeffinal_field.append(dictFieldimureadef.get(i))
-            imureadeffinal_source.append(dictSourceimureadef.get(i))              
+            imureadeffinal_source.append(dictSourceimureadef.get(i)) 
+        imureanesoifinal_ticker = []
+        imureanesoifinal_field = []
+        imureanesoifinal_source = []
+        for i in (list_imureanesoi):
+            imureanesoifinal_ticker.append(dictTickerimureanesoi.get(i))
+            imureanesoifinal_field.append(dictFieldimureanesoi.get(i))
+            imureanesoifinal_source.append(dictSourceimureanesoi.get(i))  
+        imureasolidfinal_ticker = []
+        imureasolidfinal_field = []
+        imureasolidfinal_source = []
+        for i in (list_imureasolid):
+            imureasolidfinal_ticker.append(dictTickerimureasolid.get(i))
+            imureasolidfinal_field.append(dictFieldimureasolid.get(i))
+            imureasolidfinal_source.append(dictSourceimureasolid.get(i))  
+        imureaaqfinal_ticker = []
+        imureaaqfinal_field = []
+        imureaaqfinal_source = []
+        for i in (list_imureaaq):
+            imureaaqfinal_ticker.append(dictTickerimureaaq.get(i))
+            imureaaqfinal_field.append(dictFieldimureaaq.get(i))
+            imureaaqfinal_source.append(dictSourceimureaaq.get(i))   
+        exammtotfinal_ticker = []
+        exammtotfinal_field = []
+        exammtotfinal_source = []
+        for i in (list_exammtot):
+            exammtotfinal_ticker.append(dictTickerexammtot.get(i))
+            exammtotfinal_field.append(dictFieldexammtot.get(i))
+            exammtotfinal_source.append(dictSourceexammtot.get(i)) 
+        exammanfinal_ticker = []
+        exammanfinal_field = []
+        exammanfinal_source = []
+        for i in (list_examman):
+            exammanfinal_ticker.append(dictTickerexamman.get(i))
+            exammanfinal_field.append(dictFieldexamman.get(i))
+            exammanfinal_source.append(dictSourceexamman.get(i))
+        exammnittotfinal_ticker = []
+        exammnittotfinal_field = []
+        exammnittotfinal_source = []
+        for i in (list_exammnittot):
+            exammnittotfinal_ticker.append(dictTickerexammnittot.get(i))
+            exammnittotfinal_field.append(dictFieldexammnittot.get(i))
+            exammnittotfinal_source.append(dictSourceexammnittot.get(i))    
+        exammnitaqfinal_ticker = []
+        exammnitaqfinal_field = []
+        exammnitaqfinal_source = []
+        for i in (list_exammnitaq):
+            exammnitaqfinal_ticker.append(dictTickerexammnitaq.get(i))
+            exammnitaqfinal_field.append(dictFieldexammnitaq.get(i))
+            exammnitaqfinal_source.append(dictSourceexammnitaq.get(i))   
+        exammsufinal_ticker = []
+        exammsufinal_field = []
+        exammsufinal_source = []
+        for i in (list_exammsu):
+            exammsufinal_ticker.append(dictTickerexammsu.get(i))
+            exammsufinal_field.append(dictFieldexammsu.get(i))
+            exammsufinal_source.append(dictSourceexammsu.get(i))    
+        exdapfinal_ticker = []
+        exdapfinal_field = []
+        exdapfinal_source = []
+        for i in (list_exdap):
+            exdapfinal_ticker.append(dictTickerexdap.get(i))
+            exdapfinal_field.append(dictFieldexdap.get(i))
+            exdapfinal_source.append(dictSourceexdap.get(i))       
+        exnpkfinal_ticker = []
+        exnpkfinal_field = []
+        exnpkfinal_source = []
+        for i in (list_exnpk):
+            exnpkfinal_ticker.append(dictTickerexnpk.get(i))
+            exnpkfinal_field.append(dictFieldexnpk.get(i))
+            exnpkfinal_source.append(dictSourceexnpk.get(i))   
+        exmaptotfinal_ticker = []
+        exmaptotfinal_field = []
+        exmaptotfinal_source = []
+        for i in (list_exmaptot):
+            exmaptotfinal_ticker.append(dictTickerexmaptot.get(i))
+            exmaptotfinal_field.append(dictFieldexmaptot.get(i))
+            exmaptotfinal_source.append(dictSourceexmaptot.get(i))   
+        exmapmixfinal_ticker = []
+        exmapmixfinal_field = []
+        exmapmixfinal_source = []
+        for i in (list_exmapmix):
+            exmapmixfinal_ticker.append(dictTickerexmapmix.get(i))
+            exmapmixfinal_field.append(dictFieldexmapmix.get(i))
+            exmapmixfinal_source.append(dictSourceexmapmix.get(i))  
+        exphosacfinal_ticker = []
+        exphosacfinal_field = []
+        exphosacfinal_source = []
+        for i in (list_exphosac):
+            exphosacfinal_ticker.append(dictTickerexphosac.get(i))
+            exphosacfinal_field.append(dictFieldexphosac.get(i))
+            exphosacfinal_source.append(dictSourceexphosac.get(i))   
+        expotfinal_ticker = []
+        expotfinal_field = []
+        expotfinal_source = []
+        for i in (list_expot):
+            expotfinal_ticker.append(dictTickerexpot.get(i))
+            expotfinal_field.append(dictFieldexpot.get(i))
+            expotfinal_source.append(dictSourceexpot.get(i)) 
+        extsptotfinal_ticker = []
+        extsptotfinal_field = []
+        extsptotfinal_source = []
+        for i in (list_extsptot):
+            extsptotfinal_ticker.append(dictTickerextsptot.get(i))
+            extsptotfinal_field.append(dictFieldextsptot.get(i))
+            extsptotfinal_source.append(dictSourceextsptot.get(i))    
+        extsplessfinal_ticker = []
+        extsplessfinal_field = []
+        extsplessfinal_source = []
+        for i in (list_extspless):
+            extsplessfinal_ticker.append(dictTickerextspless.get(i))
+            extsplessfinal_field.append(dictFieldextspless.get(i))
+            extsplessfinal_source.append(dictSourceextspless.get(i))  
+        extspgreatfinal_ticker = []
+        extspgreatfinal_field = []
+        extspgreatfinal_source = []
+        for i in (list_extspgreat):
+            extspgreatfinal_ticker.append(dictTickerextspgreat.get(i))
+            extspgreatfinal_field.append(dictFieldextspgreat.get(i))
+            extspgreatfinal_source.append(dictSourceextspgreat.get(i))  
+        exuantotfinal_ticker = []
+        exuantotfinal_field = []
+        exuantotfinal_source = []
+        for i in (list_exuantot):
+            exuantotfinal_ticker.append(dictTickerexuantot.get(i))
+            exuantotfinal_field.append(dictFieldexuantot.get(i))
+            exuantotfinal_source.append(dictSourceexuantot.get(i))    
+        exuanmixfinal_ticker = []
+        exuanmixfinal_field = []
+        exuanmixfinal_source = []
+        for i in (list_exuanmix):
+            exuanmixfinal_ticker.append(dictTickerexuanmix.get(i))
+            exuanmixfinal_field.append(dictFieldexuanmix.get(i))
+            exuanmixfinal_source.append(dictSourceexuanmix.get(i)) 
+        exureatotfinal_ticker = []
+        exureatotfinal_field = []
+        exureatotfinal_source = []
+        for i in (list_exureatot):
+            exureatotfinal_ticker.append(dictTickerexureatot.get(i))
+            exureatotfinal_field.append(dictFieldexureatot.get(i))
+            exureatotfinal_source.append(dictSourceexureatot.get(i))   
+        exureaaqfinal_ticker = []
+        exureaaqfinal_field = []
+        exureaaqfinal_source = []
+        for i in (list_exureaaq):
+            exureaaqfinal_ticker.append(dictTickerexureaaq.get(i))
+            exureaaqfinal_field.append(dictFieldexureaaq.get(i))
+            exureaaqfinal_source.append(dictSourceexureaaq.get(i))       
+        sdammfinal_ticker = []
+        sdammfinal_field = []
+        sdammfinal_source = []
+        for i in (list_sdamm):
+            sdammfinal_ticker.append(dictTickersdamm.get(i))
+            sdammfinal_field.append(dictFieldsdamm.get(i))
+            sdammfinal_source.append(dictSourcesdamm.get(i))   
+        sddapmapusfinal_ticker = []
+        sddapmapusfinal_field = []
+        sddapmapusfinal_source = []
+        for i in (list_sddapmapus):
+            sddapmapusfinal_ticker.append(dictTickersddapmapus.get(i))
+            sddapmapusfinal_field.append(dictFieldsddapmapus.get(i))
+            sddapmapusfinal_source.append(dictSourcesddapmapus.get(i))    
+        sddapmapallfinal_ticker = []
+        sddapmapallfinal_field = []
+        sddapmapallfinal_source = []
+        for i in (list_sddapmapall):
+            sddapmapallfinal_ticker.append(dictTickersddapmapall.get(i))
+            sddapmapallfinal_field.append(dictFieldsddapmapall.get(i))
+            sddapmapallfinal_source.append(dictSourcesddapmapall.get(i))  
+        sdpotusfinal_ticker = []
+        sdpotusfinal_field = []
+        sdpotusfinal_source = []
+        for i in (list_sdpotus):
+            sdpotusfinal_ticker.append(dictTickersdpotus.get(i))
+            sdpotusfinal_field.append(dictFieldsdpotus.get(i))
+            sdpotusfinal_source.append(dictSourcesdpotus.get(i))    
+        sdpotallfinal_ticker = []
+        sdpotallfinal_field = []
+        sdpotallfinal_source = []
+        for i in (list_sdpotall):
+            sdpotallfinal_ticker.append(dictTickersdpotall.get(i))
+            sdpotallfinal_field.append(dictFieldsdpotall.get(i))
+            sdpotallfinal_source.append(dictSourcesdpotall.get(i))         
+        sduanfinal_ticker = []
+        sduanfinal_field = []
+        sduanfinal_source = []
+        for i in (list_sduan):
+            sduanfinal_ticker.append(dictTickersduan.get(i))
+            sduanfinal_field.append(dictFieldsduan.get(i))
+            sduanfinal_source.append(dictSourcesduan.get(i))   
+        sdureausfinal_ticker = []
+        sdureausfinal_field = []
+        sdureausfinal_source = []
+        for i in (list_sdureaus):
+            sdureausfinal_ticker.append(dictTickersdureaus.get(i))
+            sdureausfinal_field.append(dictFieldsdureaus.get(i))
+            sdureausfinal_source.append(dictSourcesdureaus.get(i))    
+        sdureaallfinal_ticker = []
+        sdureaallfinal_field = []
+        sdureaallfinal_source = []
+        for i in (list_sdureaall):
+            sdureaallfinal_ticker.append(dictTickersdureaall.get(i))
+            sdureaallfinal_field.append(dictFieldsdureaall.get(i))
+            sdureaallfinal_source.append(dictSourcesdureaall.get(i))    
+        dapbidfinal_ticker = []
+        dapbidfinal_field = []
+        dapbidfinal_source = []
+        for i in (list_dapbid):
+            dapbidfinal_ticker.append(dictTickerdapbid.get(i))
+            dapbidfinal_field.append(dictFielddapbid.get(i))
+            dapbidfinal_source.append(dictSourcedapbid.get(i))     
+        dapofferfinal_ticker = []
+        dapofferfinal_field = []
+        dapofferfinal_source = []
+        for i in (list_dapoffer):
+            dapofferfinal_ticker.append(dictTickerdapoffer.get(i))
+            dapofferfinal_field.append(dictFielddapoffer.get(i))
+            dapofferfinal_source.append(dictSourcedapoffer.get(i))      
+        dapmidfinal_ticker = []
+        dapmidfinal_field = []
+        dapmidfinal_source = []
+        for i in (list_dapmid):
+            dapmidfinal_ticker.append(dictTickerdapmid.get(i))
+            dapmidfinal_field.append(dictFielddapmid.get(i))
+            dapmidfinal_source.append(dictSourcedapmid.get(i))  
+        mopbidfinal_ticker = []
+        mopbidfinal_field = []
+        mopbidfinal_source = []
+        for i in (list_mopbid):
+            mopbidfinal_ticker.append(dictTickermopbid.get(i))
+            mopbidfinal_field.append(dictFieldmopbid.get(i))
+            mopbidfinal_source.append(dictSourcemopbid.get(i))     
+        mopofferfinal_ticker = []
+        mopofferfinal_field = []
+        mopofferfinal_source = []
+        for i in (list_mopoffer):
+            mopofferfinal_ticker.append(dictTickermopoffer.get(i))
+            mopofferfinal_field.append(dictFieldmopoffer.get(i))
+            mopofferfinal_source.append(dictSourcemopoffer.get(i))      
+        mopmidfinal_ticker = []
+        mopmidfinal_field = []
+        mopmidfinal_source = []
+        for i in (list_mopmid):
+            mopmidfinal_ticker.append(dictTickermopmid.get(i))
+            mopmidfinal_field.append(dictFieldmopmid.get(i))
+            mopmidfinal_source.append(dictSourcemopmid.get(i))    
+        phorockbidfinal_ticker = []
+        phorockbidfinal_field = []
+        phorockbidfinal_source = []
+        for i in (list_phorockbid):
+            phorockbidfinal_ticker.append(dictTickerphorockbid.get(i))
+            phorockbidfinal_field.append(dictFieldphorockbid.get(i))
+            phorockbidfinal_source.append(dictSourcephorockbid.get(i))     
+        phorockofferfinal_ticker = []
+        phorockofferfinal_field = []
+        phorockofferfinal_source = []
+        for i in (list_phorockoffer):
+            phorockofferfinal_ticker.append(dictTickerphorockoffer.get(i))
+            phorockofferfinal_field.append(dictFieldphorockoffer.get(i))
+            phorockofferfinal_source.append(dictSourcephorockoffer.get(i))      
+        phorockmidfinal_ticker = []
+        phorockmidfinal_field = []
+        phorockmidfinal_source = []
+        for i in (list_phorockmid):
+            phorockmidfinal_ticker.append(dictTickerphorockmid.get(i))
+            phorockmidfinal_field.append(dictFieldphorockmid.get(i))
+            phorockmidfinal_source.append(dictSourcephorockmid.get(i)) 
+        sulfurbidfinal_ticker = []
+        sulfurbidfinal_field = []
+        sulfurbidfinal_source = []
+        for i in (list_sulfurbid):
+            sulfurbidfinal_ticker.append(dictTickersulfurbid.get(i))
+            sulfurbidfinal_field.append(dictFieldsulfurbid.get(i))
+            sulfurbidfinal_source.append(dictSourcesulfurbid.get(i))     
+        sulfurofferfinal_ticker = []
+        sulfurofferfinal_field = []
+        sulfurofferfinal_source = []
+        for i in (list_sulfuroffer):
+            sulfurofferfinal_ticker.append(dictTickersulfuroffer.get(i))
+            sulfurofferfinal_field.append(dictFieldsulfuroffer.get(i))
+            sulfurofferfinal_source.append(dictSourcesulfuroffer.get(i))      
+        sulfurmidfinal_ticker = []
+        sulfurmidfinal_field = []
+        sulfurmidfinal_source = []
+        for i in (list_sulfurmid):
+            sulfurmidfinal_ticker.append(dictTickersulfurmid.get(i))
+            sulfurmidfinal_field.append(dictFieldsulfurmid.get(i))
+            sulfurmidfinal_source.append(dictSourcesulfurmid.get(i))    
+        ureabidfinal_ticker = []
+        ureabidfinal_field = []
+        ureabidfinal_source = []
+        for i in (list_ureabid):
+            ureabidfinal_ticker.append(dictTickerureabid.get(i))
+            ureabidfinal_field.append(dictFieldureabid.get(i))
+            ureabidfinal_source.append(dictSourceureabid.get(i))     
+        ureaofferfinal_ticker = []
+        ureaofferfinal_field = []
+        ureaofferfinal_source = []
+        for i in (list_ureaoffer):
+            ureaofferfinal_ticker.append(dictTickerureaoffer.get(i))
+            ureaofferfinal_field.append(dictFieldureaoffer.get(i))
+            ureaofferfinal_source.append(dictSourceureaoffer.get(i))      
+        ureamidfinal_ticker = []
+        ureamidfinal_field = []
+        ureamidfinal_source = []
+        for i in (list_ureamid):
+            ureamidfinal_ticker.append(dictTickerureamid.get(i))
+            ureamidfinal_field.append(dictFieldureamid.get(i))
+            ureamidfinal_source.append(dictSourceureamid.get(i))  
+        ammbidfinal_ticker = []
+        ammbidfinal_field = []
+        ammbidfinal_source = []
+        for i in (list_ammbid):
+            ammbidfinal_ticker.append(dictTickerammbid.get(i))
+            ammbidfinal_field.append(dictFieldammbid.get(i))
+            ammbidfinal_source.append(dictSourceammbid.get(i))     
+        ammofferfinal_ticker = []
+        ammofferfinal_field = []
+        ammofferfinal_source = []
+        for i in (list_ammoffer):
+            ammofferfinal_ticker.append(dictTickerammoffer.get(i))
+            ammofferfinal_field.append(dictFieldammoffer.get(i))
+            ammofferfinal_source.append(dictSourceammoffer.get(i))      
+        ammmidfinal_ticker = []
+        ammmidfinal_field = []
+        ammmidfinal_source = []
+        for i in (list_ammmid):
+            ammmidfinal_ticker.append(dictTickerammmid.get(i))
+            ammmidfinal_field.append(dictFieldammmid.get(i))
+            ammmidfinal_source.append(dictSourceammmid.get(i))   
+        phoacbidfinal_ticker = []
+        phoacbidfinal_field = []
+        phoacbidfinal_source = []
+        for i in (list_phoacbid):
+            phoacbidfinal_ticker.append(dictTickerphoacbid.get(i))
+            phoacbidfinal_field.append(dictFieldphoacbid.get(i))
+            phoacbidfinal_source.append(dictSourcephoacbid.get(i))     
+        phoacofferfinal_ticker = []
+        phoacofferfinal_field = []
+        phoacofferfinal_source = []
+        for i in (list_phoacoffer):
+            phoacofferfinal_ticker.append(dictTickerphoacoffer.get(i))
+            phoacofferfinal_field.append(dictFieldphoacoffer.get(i))
+            phoacofferfinal_source.append(dictSourcephoacoffer.get(i))      
+        phoacmidfinal_ticker = []
+        phoacmidfinal_field = []
+        phoacmidfinal_source = []
+        for i in (list_phoacmid):
+            phoacmidfinal_ticker.append(dictTickerphoacmid.get(i))
+            phoacmidfinal_field.append(dictFieldphoacmid.get(i))
+            phoacmidfinal_source.append(dictSourcephoacmid.get(i))     
+        sulacbidfinal_ticker = []
+        sulacbidfinal_field = []
+        sulacbidfinal_source = []
+        for i in (list_sulacbid):
+            sulacbidfinal_ticker.append(dictTickersulacbid.get(i))
+            sulacbidfinal_field.append(dictFieldsulacbid.get(i))
+            sulacbidfinal_source.append(dictSourcesulacbid.get(i))     
+        sulacofferfinal_ticker = []
+        sulacofferfinal_field = []
+        sulacofferfinal_source = []
+        for i in (list_sulacoffer):
+            sulacofferfinal_ticker.append(dictTickersulacoffer.get(i))
+            sulacofferfinal_field.append(dictFieldsulacoffer.get(i))
+            sulacofferfinal_source.append(dictSourcesulacoffer.get(i))      
+        sulacmidfinal_ticker = []
+        sulacmidfinal_field = []
+        sulacmidfinal_source = []
+        for i in (list_sulacmid):
+            sulacmidfinal_ticker.append(dictTickersulacmid.get(i))
+            sulacmidfinal_field.append(dictFieldsulacmid.get(i))
+            sulacmidfinal_source.append(dictSourcesulacmid.get(i))    
+        uanbidfinal_ticker = []
+        uanbidfinal_field = []
+        uanbidfinal_source = []
+        for i in (list_uanbid):
+            uanbidfinal_ticker.append(dictTickeruanbid.get(i))
+            uanbidfinal_field.append(dictFielduanbid.get(i))
+            uanbidfinal_source.append(dictSourceuanbid.get(i))     
+        uanofferfinal_ticker = []
+        uanofferfinal_field = []
+        uanofferfinal_source = []
+        for i in (list_uanoffer):
+            uanofferfinal_ticker.append(dictTickeruanoffer.get(i))
+            uanofferfinal_field.append(dictFielduanoffer.get(i))
+            uanofferfinal_source.append(dictSourceuanoffer.get(i))      
+        uanmidfinal_ticker = []
+        uanmidfinal_field = []
+        uanmidfinal_source = []
+        for i in (list_uanmid):
+            uanmidfinal_ticker.append(dictTickeruanmid.get(i))
+            uanmidfinal_field.append(dictFielduanmid.get(i))
+            uanmidfinal_source.append(dictSourceuanmid.get(i))   
+        chsdapfinal_ticker = []
+        chsdapfinal_field = []
+        chsdapfinal_source = []
+        for i in (list_chsdap):
+            chsdapfinal_ticker.append(dictTickerchsdap.get(i))
+            chsdapfinal_field.append(dictFieldchsdap.get(i))
+            chsdapfinal_source.append(dictSourcechsdap.get(i))  
+        chspotfinal_ticker = []
+        chspotfinal_field = []
+        chspotfinal_source = []
+        for i in (list_chspot):
+            chspotfinal_ticker.append(dictTickerchspot.get(i))
+            chspotfinal_field.append(dictFieldchspot.get(i))
+            chspotfinal_source.append(dictSourcechspot.get(i)) 
+        chsuanfinal_ticker = []
+        chsuanfinal_field = []
+        chsuanfinal_source = []
+        for i in (list_chsuan):
+            chsuanfinal_ticker.append(dictTickerchsuan.get(i))
+            chsuanfinal_field.append(dictFieldchsuan.get(i))
+            chsuanfinal_source.append(dictSourcechsuan.get(i)) 
+        chsureafinal_ticker = []
+        chsureafinal_field = []
+        chsureafinal_source = []
+        for i in (list_chsurea):
+            chsureafinal_ticker.append(dictTickerchsurea.get(i))
+            chsureafinal_field.append(dictFieldchsurea.get(i))
+            chsureafinal_source.append(dictSourcechsurea.get(i))    
+        buckdapfinal_ticker = []
+        buckdapfinal_field = []
+        buckdapfinal_source = []
+        for i in (list_buckdap):
+            buckdapfinal_ticker.append(dictTickerbuckdap.get(i))
+            buckdapfinal_field.append(dictFieldbuckdap.get(i))
+            buckdapfinal_source.append(dictSourcebuckdap.get(i))  
+        buckpotfinal_ticker = []
+        buckpotfinal_field = []
+        buckpotfinal_source = []
+        for i in (list_buckpot):
+            buckpotfinal_ticker.append(dictTickerbuckpot.get(i))
+            buckpotfinal_field.append(dictFieldbuckpot.get(i))
+            buckpotfinal_source.append(dictSourcebuckpot.get(i)) 
+        buckuanfinal_ticker = []
+        buckuanfinal_field = []
+        buckuanfinal_source = []
+        for i in (list_buckuan):
+            buckuanfinal_ticker.append(dictTickerbuckuan.get(i))
+            buckuanfinal_field.append(dictFieldbuckuan.get(i))
+            buckuanfinal_source.append(dictSourcebuckuan.get(i)) 
+        buckureafinal_ticker = []
+        buckureafinal_field = []
+        buckureafinal_source = []
+        for i in (list_buckurea):
+            buckureafinal_ticker.append(dictTickerbuckurea.get(i))
+            buckureafinal_field.append(dictFieldbuckurea.get(i))
+            buckureafinal_source.append(dictSourcebuckurea.get(i))   
+        crufinal_ticker = []
+        crufinal_field = []
+        crufinal_source = []
+        for i in (list_cru):
+            crufinal_ticker.append(dictTickercru.get(i))
+            crufinal_field.append(dictFieldcru.get(i))
+            crufinal_source.append(dictSourcecru.get(i))             
 ##############################################################################################################################################################################
         ticker = ureagrancfrfinal_ticker + ureagrandelfinal_ticker + ureagranfcafinal_ticker + ureagranfobfinal_ticker + ureagranfobfisfinal_ticker + ureaprillcfrfinal_ticker + ureaprillcptfinal_ticker + ureaprillfobfinal_ticker + ureaprillfobfisfinal_ticker + ureaotherfinal_ticker + uan2830final_ticker + uan32final_ticker + uanotherfinal_ticker + potgranfinal_ticker + potstanfinal_ticker + ammspotfinal_ticker + ammtotcfrfinal_ticker + ammtotdelfinal_ticker + ammtotfobfinal_ticker + ammcontractfinal_ticker + anbagfinal_ticker + anbulkfinal_ticker + antotcfrfinal_ticker + antotfobfinal_ticker + asotherfinal_ticker +  asstanfinal_ticker + aswcfrfinal_ticker + aswfobfinal_ticker + canfinal_ticker + dapfobfinal_ticker + dapotherfinal_ticker + map10final_ticker + mapotherfinal_ticker + npk10final_ticker + npk15final_ticker + npk16final_ticker + npk17final_ticker + npk20final_ticker + phosrockfinal_ticker + phosacidfinal_ticker + \
         sopsspfinal_ticker + sspotfinal_ticker + stotfinal_ticker + s6mfinal_ticker + sgreatfinal_ticker + sliqfinal_ticker + smonthfinal_ticker + sqfinal_ticker + saspotfinal_ticker + satotfinal_ticker + saconfinal_ticker + tspfinal_ticker + coalefinal_ticker + coalarafinal_ticker + coalrfinal_ticker + \
@@ -4614,7 +6355,11 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         wheatclosefinal_ticker + wheathighfinal_ticker + wheatlowfinal_ticker + wheatopenfinal_ticker + wheatvolfinal_ticker + soyclosefinal_ticker + soyhighfinal_ticker + soylowfinal_ticker + soyopenfinal_ticker + soyvolfinal_ticker + soclosefinal_ticker + sohighfinal_ticker + solowfinal_ticker + soopenfinal_ticker + sovolfinal_ticker + \
         cotclosefinal_ticker + cothighfinal_ticker + cotlowfinal_ticker + cotopenfinal_ticker + cotvolfinal_ticker + sbclosefinal_ticker + sbhighfinal_ticker + sblowfinal_ticker + sbopenfinal_ticker + sbvolfinal_ticker + sincurrencyfinal_ticker + crosscurrencyfinal_ticker + equityfinal_ticker + sentfinal_ticker + imammtotfinal_ticker + \
         imammanfinal_ticker + imammnittotfinal_ticker + imammnitaqfinal_ticker + imammsufinal_ticker + imdapfinal_ticker + imintfinal_ticker + immaptotfinal_ticker + immapmixfinal_ticker + imphosacfinal_ticker + impotfinal_ticker + imtsptotfinal_ticker + imtsplessfinal_ticker + imtspgreatfinal_ticker + imuantotfinal_ticker + \
-        imuanmixfinal_ticker + imureatotfinal_ticker + imureadeffinal_ticker
+        imuanmixfinal_ticker + imureatotfinal_ticker + imureadeffinal_ticker + imureanesoifinal_ticker + imureasolidfinal_ticker + imureaaqfinal_ticker + exammtotfinal_ticker + exammanfinal_ticker + exammnittotfinal_ticker + exammnitaqfinal_ticker + exammsufinal_ticker + exdapfinal_ticker + exnpkfinal_ticker + exmaptotfinal_ticker + \
+        exmapmixfinal_ticker + exphosacfinal_ticker + expotfinal_ticker + extsptotfinal_ticker + extsplessfinal_ticker + extspgreatfinal_ticker + exuantotfinal_ticker + exuanmixfinal_ticker + exureatotfinal_ticker + exureaaqfinal_ticker + sdammfinal_ticker + sddapmapusfinal_ticker + sddapmapallfinal_ticker + sdpotusfinal_ticker + sdpotallfinal_ticker + \
+        sduanfinal_ticker + sdureausfinal_ticker + sdureaallfinal_ticker + dapbidfinal_ticker + dapofferfinal_ticker + dapmidfinal_ticker + mopbidfinal_ticker + mopofferfinal_ticker + mopmidfinal_ticker + phorockbidfinal_ticker + phorockofferfinal_ticker + phorockmidfinal_ticker + sulfurbidfinal_ticker + sulfurofferfinal_ticker + sulfurmidfinal_ticker + \
+        ureabidfinal_ticker + ureaofferfinal_ticker + ureamidfinal_ticker + ammbidfinal_ticker + ammofferfinal_ticker + ammmidfinal_ticker + phoacbidfinal_ticker + phoacofferfinal_ticker + phoacmidfinal_ticker + sulacbidfinal_ticker + sulacofferfinal_ticker + sulacmidfinal_ticker + uanbidfinal_ticker + uanofferfinal_ticker + uanmidfinal_ticker + \
+        chsdapfinal_ticker + chspotfinal_ticker + chsuanfinal_ticker + chsureafinal_ticker + buckdapfinal_ticker + buckpotfinal_ticker + buckuanfinal_ticker + buckureafinal_ticker + crufinal_ticker
         field_name = ureagrancfrfinal_field + ureagrandelfinal_field + ureagranfcafinal_field + ureagranfobfinal_field + ureagranfobfisfinal_field + ureaprillcfrfinal_field + ureaprillcptfinal_field + ureaprillfobfinal_field + ureaprillfobfisfinal_field + ureaotherfinal_field + uan2830final_field + \
                     uan32final_field + uanotherfinal_field + potgranfinal_field + potstanfinal_field + ammspotfinal_field + ammtotcfrfinal_field + ammtotdelfinal_field + ammtotfobfinal_field + ammcontractfinal_field + anbagfinal_field + anbulkfinal_field + antotcfrfinal_field + antotfobfinal_field + asotherfinal_field + \
                      asstanfinal_field + aswcfrfinal_field + aswfobfinal_field + canfinal_field + dapfobfinal_field + dapotherfinal_field + map10final_field + mapotherfinal_field + npk10final_field + npk15final_field + npk16final_field + npk17final_field + npk20final_field + phosrockfinal_field + \
@@ -4629,7 +6374,11 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
                      wheatclosefinal_field + wheathighfinal_field + wheatlowfinal_field + wheatopenfinal_field + wheatvolfinal_field + soyclosefinal_field + soyhighfinal_field + soylowfinal_field + soyopenfinal_field + soyvolfinal_field + soclosefinal_field + sohighfinal_field + solowfinal_field + soopenfinal_field + sovolfinal_field + \
                      cotclosefinal_field + cothighfinal_field + cotlowfinal_field + cotopenfinal_field + cotvolfinal_field + sbclosefinal_field + sbhighfinal_field + sblowfinal_field + sbopenfinal_field + sbvolfinal_field + sincurrencyfinal_field + crosscurrencyfinal_field + equityfinal_field + sentfinal_field + imammtotfinal_field + \
                      imammanfinal_field + imammnittotfinal_field + imammnitaqfinal_field + imammsufinal_field + imdapfinal_field + imintfinal_field + immaptotfinal_field + immapmixfinal_field + imphosacfinal_field + impotfinal_field + imtsptotfinal_field + imtsplessfinal_field + imtspgreatfinal_field + imuantotfinal_field + \
-                     imuanmixfinal_field + imureatotfinal_field + imureadeffinal_field
+                     imuanmixfinal_field + imureatotfinal_field + imureadeffinal_field + imureanesoifinal_field + imureasolidfinal_field + imureaaqfinal_field + exammtotfinal_field + exammanfinal_field + exammnittotfinal_field + exammnitaqfinal_field + exammsufinal_field + exdapfinal_field + exnpkfinal_field + exmaptotfinal_field + \
+                     exmapmixfinal_field + exphosacfinal_field + expotfinal_field + extsptotfinal_field + extsplessfinal_field + extspgreatfinal_field + exuantotfinal_field + exuanmixfinal_field + exureatotfinal_field + exureaaqfinal_field + sdammfinal_field + sddapmapusfinal_field + sddapmapallfinal_field + sdpotusfinal_field + sdpotallfinal_field + \
+                     sduanfinal_field + sdureausfinal_field + sdureaallfinal_field + dapbidfinal_field + dapofferfinal_field + dapmidfinal_field + mopbidfinal_field + mopofferfinal_field + mopmidfinal_field + phorockbidfinal_field + phorockofferfinal_field + phorockmidfinal_field + sulfurbidfinal_field + sulfurofferfinal_field + sulfurmidfinal_field + \
+                     ureabidfinal_field + ureaofferfinal_field + ureamidfinal_field + ammbidfinal_field + ammofferfinal_field + ammmidfinal_field + phoacbidfinal_field + phoacofferfinal_field + phoacmidfinal_field + sulacbidfinal_field + sulacofferfinal_field + sulacmidfinal_field + uanbidfinal_field + uanofferfinal_field + uanmidfinal_field + \
+                     chsdapfinal_field + chspotfinal_field + chsuanfinal_field + chsureafinal_field + buckdapfinal_field + buckpotfinal_field + buckuanfinal_field + buckureafinal_field + crufinal_field
         source = ureagrancfrfinal_source + ureagrandelfinal_source + ureagranfcafinal_source + ureagranfobfinal_source + ureagranfobfisfinal_source + ureaprillcfrfinal_source + ureaprillcptfinal_source + ureaprillfobfinal_source + ureaprillfobfisfinal_source + ureaotherfinal_source + \
                  uan2830final_source + uan32final_source + uanotherfinal_source + potgranfinal_source + potstanfinal_source + ammspotfinal_source + ammtotcfrfinal_source + ammtotdelfinal_source + ammtotfobfinal_source + ammcontractfinal_source + anbagfinal_source + anbulkfinal_source + antotcfrfinal_source + \
                  antotfobfinal_source + asotherfinal_source + asstanfinal_source + aswcfrfinal_source + aswfobfinal_source + canfinal_source + dapfobfinal_source + dapotherfinal_source + map10final_source + mapotherfinal_source + npk10final_source + npk15final_source + npk16final_source + npk17final_source + npk20final_source + \
@@ -4644,7 +6393,11 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
                  wheatclosefinal_source + wheathighfinal_source + wheatlowfinal_source + wheatopenfinal_source + wheatvolfinal_source + soyclosefinal_source + soyhighfinal_source + soylowfinal_source + soyopenfinal_source + soyvolfinal_source + soclosefinal_source + sohighfinal_source + solowfinal_source + soopenfinal_source + sovolfinal_source + \
                  cotclosefinal_source + cothighfinal_source + cotlowfinal_source + cotopenfinal_source + cotvolfinal_source + sbclosefinal_source + sbhighfinal_source + sblowfinal_source + sbopenfinal_source + sbvolfinal_source + sincurrencyfinal_source + crosscurrencyfinal_source + equityfinal_source + sentfinal_source + imammtotfinal_source + \
                  imammanfinal_source + imammnittotfinal_source + imammnitaqfinal_source + imammsufinal_source + imdapfinal_source + imintfinal_source + immaptotfinal_source + immapmixfinal_source + imphosacfinal_source + impotfinal_source + imtsptotfinal_source + imtsplessfinal_source + imtspgreatfinal_source + imuantotfinal_source + \
-                 imuanmixfinal_source + imureatotfinal_source + imureadeffinal_source
+                 imuanmixfinal_source + imureatotfinal_source + imureadeffinal_source + imureanesoifinal_source + imureasolidfinal_source + imureaaqfinal_source + exammtotfinal_source + exammanfinal_source + exammnittotfinal_source + exammnitaqfinal_source + exammsufinal_source + exdapfinal_source + exnpkfinal_source + exmaptotfinal_source + \
+                 exmapmixfinal_source + exphosacfinal_source + expotfinal_source + extsptotfinal_source + extsplessfinal_source + extspgreatfinal_source + exuantotfinal_source + exuanmixfinal_source + exureatotfinal_source + exureaaqfinal_source + sdammfinal_source + sddapmapusfinal_source + sddapmapallfinal_source + sdpotusfinal_source + sdpotallfinal_source + \
+                 sduanfinal_source + sdureausfinal_source + sdureaallfinal_source + dapbidfinal_source + dapofferfinal_source + dapmidfinal_source + mopbidfinal_source + mopofferfinal_source + mopmidfinal_source + phorockbidfinal_source + phorockofferfinal_source + phorockmidfinal_source + sulfurbidfinal_source + sulfurofferfinal_source + sulfurmidfinal_source + \
+                 ureabidfinal_source + ureaofferfinal_source + ureamidfinal_source + ammbidfinal_source + ammofferfinal_source + ammmidfinal_source + phoacbidfinal_source + phoacofferfinal_source + phoacmidfinal_source + sulacbidfinal_source + sulacofferfinal_source + sulacmidfinal_source + uanbidfinal_source + uanofferfinal_source + uanmidfinal_source + \
+                 chsdapfinal_source + chspotfinal_source + chsuanfinal_source + chsureafinal_source + buckdapfinal_source + buckpotfinal_source + buckuanfinal_source + buckureafinal_source + crufinal_source
         
         crtConn = crtDbOpen()
         df = pd.DataFrame()
@@ -4766,6 +6519,13 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         self.fitx_comboBox.addItems(df.columns[1:])
         self.fity_comboBox.addItems(df.columns[1:])  
        
+      
+        def forecast_save():
+            self.textEdit.setText(QFileDialog.getSaveFileName())
+            save_file = (self.textEdit.toPlainText()) 
+            dfnew = df.drop(['Date'],axis=1)
+            dfnew.to_csv(save_file)
+        self.save_pushButton.clicked.connect(forecast_save) 
         return df
         
     def clearselection(self):
@@ -5097,6 +6857,8 @@ class MyApp(QtGui.QMainWindow, Ui_MainWindow):
         plt.xlabel('theoretical quantiles')
         plt.ylabel('sample quantiles')
         plt.show()
+    
+       
         
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
